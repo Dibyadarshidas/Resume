@@ -72,7 +72,7 @@ body{
 }
 .intro-img img{
     width: 5rem;
-    height: 5rem;
+    height: auto;
 }
 .social{
     display: flex;
