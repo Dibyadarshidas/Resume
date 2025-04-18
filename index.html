@@ -1,995 +1,1262 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="icon" href="./images/favicon.ico" type="image/gif" sizes="16x16">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="icon"
+      href="./images/favicon.ico"
+      type="image/gif"
+      sizes="16x16"
+    />
     <title>Didas</title>
-</head>
-<body>
-<!-- LIMITED TIME OFFER BANNER -->
-<div class="limited-offer-banner">
-    <p><span class="highlight">Limited Time Offer:</span> 25% off your first mentorship session</p>
-    <div class="banner-actions">
-        <button id="offer-btn" class="offer-btn"><i class="fas fa-arrow-right"></i> Claim Offer</button>
-        <button id="close-offer" class="close-offer"><i class="fas fa-times"></i></button>
+  </head>
+  <body>
+    <!-- LIMITED TIME OFFER BANNER -->
+    <div class="limited-offer-banner">
+      <p>
+        <span class="highlight">Limited Time Offer:</span> 25% off your first
+        mentorship session
+      </p>
+      <div class="banner-actions">
+        <button id="offer-btn" class="offer-btn">
+          <i class="fas fa-arrow-right"></i> Claim Offer
+        </button>
+        <button id="close-offer" class="close-offer">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
     </div>
-</div>
 
-<!-- NAVIGATION -->
-<nav class="main-nav">
-    <div class="logo">Didas</div>
-    <div class="nav-right">
+    <!-- NAVIGATION -->
+    <nav class="main-nav">
+      <div class="logo">Didas</div>
+      <div class="nav-right">
         <!-- THEME TOGGLE moved into navigation -->
         <div class="theme-toggle">
-            <i class="fas fa-moon" id="theme-icon"></i>
+          <i class="fas fa-moon" id="theme-icon"></i>
         </div>
         <div class="hamburger-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
-    </div>
-    <ul class="nav-links">
+      </div>
+      <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#mentorship">Mentorship</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="./Dibyadarshi Das Resume.pdf" target="_blank" class="nav-cta">Resume</a></li>
-    </ul>
-</nav>
+        <li>
+          <a href="./Dibyadarshi Das Resume.pdf" target="_blank" class="nav-cta"
+            >Resume</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-<!-- HERO SECTION -->
-<section class="hero" id="home">
-    <div class="hero-container">
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="hero-container">
         <div class="hero-content">
-            <div class="hero-greeting">Hello, I'm</div>
-            <h1 class="hero-title">Dibyadarshi Das</h1>
-            <div class="hero-subtitle">Frontend Developer & AI Mentor</div>
-            <p class="hero-description">I craft responsive websites, build interactive applications, and mentor aspiring developers to navigate the modern tech landscape.</p>
-            
-            <div class="hero-cta">
-                <a href="#projects" class="btn primary-btn">View Projects</a>
-                <a href="#mentorship" class="btn secondary-btn">My Mentorship</a>
-            </div>
-            
-            <div class="hero-social">
-                <a href="https://github.com/Dibyadarshidas" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/dibyadas/" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://dribbble.com/Dibyadarshi" target="_blank" aria-label="Dribbble">
-                    <i class="fab fa-dribbble"></i>
-                </a>
-                <a href="./Dibyadarshi Das Resume.pdf" target="_blank" aria-label="Resume">
-                    <i class="fas fa-file-pdf"></i>
-                </a>
-            </div>
+          <div class="hero-greeting">Hello, I'm</div>
+          <h1 class="hero-title">Dibyadarshi Das</h1>
+          <div class="hero-subtitle">Frontend Developer & AI Mentor</div>
+          <p class="hero-description">
+            I craft responsive websites, build interactive applications, and
+            mentor aspiring developers to navigate the modern tech landscape.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn primary-btn">View Projects</a>
+            <a href="#mentorship" class="btn secondary-btn">My Mentorship</a>
+          </div>
+
+          <div class="hero-social">
+            <a
+              href="https://github.com/Dibyadarshidas"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/dibyadas/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://dribbble.com/Dibyadarshi"
+              target="_blank"
+              aria-label="Dribbble"
+            >
+              <i class="fab fa-dribbble"></i>
+            </a>
+            <a
+              href="./Dibyadarshi Das Resume.pdf"
+              target="_blank"
+              aria-label="Resume"
+            >
+              <i class="fas fa-file-pdf"></i>
+            </a>
+          </div>
         </div>
-        
+
         <div class="hero-image">
-            <div class="hero-image-wrapper">
-                <img src="./images/logo-vector.png" alt="Dibyadarshi Das">
-            </div>
-            <div class="hero-image-badge">
-                <span>Available for </span>
-                <span class="txt-rotate" data-period="2000" data-rotate='["Freelance", "Frontend Mentorship", "Prompt Engineering"]'></span>
-            </div>
-            </div>
+          <div class="hero-image-wrapper">
+            <img src="./images/logo-vector.png" alt="Dibyadarshi Das" />
+          </div>
+          <div class="hero-image-badge">
+            <span>Available for </span>
+            <span
+              class="txt-rotate"
+              data-period="2000"
+              data-rotate='["Freelance", "Frontend Mentorship", "Prompt Engineering"]'
+            ></span>
+          </div>
         </div>
-      
-    <div class="scroll-down">
+      </div>
+
+      <div class="scroll-down">
         <a href="#skills">
-            <span>Scroll Down</span>
-            <i class="fas fa-chevron-down"></i>
+          <span>Scroll Down</span>
+          <i class="fas fa-chevron-down"></i>
         </a>
-    </div>
+      </div>
     </section>
 
-<!-- WHY CHOOSE ME SECTION -->
-<section class="why-choose-me">
-    <div class="container center">
+    <!-- WHY CHOOSE ME SECTION -->
+    <section class="why-choose-me">
+      <div class="container center">
         <h2>Why Choose Me As Your Mentor</h2>
-        <p class="subtitle">What separates my mentorship from traditional learning paths</p>
-        
-        <div class="benefits-grid">
-            <div class="benefit-card">
-                <div class="benefit-icon">
-                    <i class="fas fa-rocket"></i>
-                </div>
-                <h3>Accelerated Learning</h3>
-                <p>Skip the trial and error of self-learning. My structured approach helps you master skills in weeks, not months.</p>
-                <p class="stat">3x faster learning rate</p>
-            </div>
-            
-            <div class="benefit-card">
-                <div class="benefit-icon">
-                    <i class="fas fa-puzzle-piece"></i>
-                </div>
-                <h3>Industry-Relevant Skills</h3>
-                <p>Focus on what actually matters in today's job market with curriculum constantly updated for real-world demands.</p>
-                <p class="stat">92% job placement rate</p>
-            </div>
-            
-            <div class="benefit-card">
-                <div class="benefit-icon">
-                    <i class="fas fa-robot"></i>
-                </div>
-                <h3>AI-Enhanced Methods</h3>
-                <p>Learn to leverage cutting-edge AI tools that most developers aren't using yet, giving you a competitive advantage.</p>
-                <p class="stat">2x productivity boost</p>
-            </div>
-            
-            <div class="benefit-card">
-                <div class="benefit-icon">
-                    <i class="fas fa-users"></i>
-                </div>
-                <h3>Community Access</h3>
-                <p>Join a network of like-minded developers for support, collaboration, and exclusive job opportunities.</p>
-                <p class="stat">150+ active members</p>
-            </div>
-        </div>
-    </div>
-</section>
+        <p class="subtitle">
+          What separates my mentorship from traditional learning paths
+        </p>
 
-<!-- DIVIDER -->
-<div class="divider" id="skills">
-    <h2>Skills</h2>
-</div>
-   <!--  SKILLS SECTION -->
-<section class="skills container center">
-    <div class="skills-intro">
-        <p>I specialize in modern web technologies and continuously expand my skillset to stay at the forefront of development.</p>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3>Accelerated Learning</h3>
+            <p>
+              Skip the trial and error of self-learning. My structured approach
+              helps you master skills in weeks, not months.
+            </p>
+            <p class="stat">3x faster learning rate</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-puzzle-piece"></i>
+            </div>
+            <h3>Industry-Relevant Skills</h3>
+            <p>
+              Focus on what actually matters in today's job market with
+              curriculum constantly updated for real-world demands.
+            </p>
+            <p class="stat">92% job placement rate</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>AI-Enhanced Methods</h3>
+            <p>
+              Learn to leverage cutting-edge AI tools that most developers
+              aren't using yet, giving you a competitive advantage.
+            </p>
+            <p class="stat">2x productivity boost</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Community Access</h3>
+            <p>
+              Join a network of like-minded developers for support,
+              collaboration, and exclusive job opportunities.
+            </p>
+            <p class="stat">150+ active members</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="divider" id="skills">
+      <h2>Skills</h2>
     </div>
-    
-    <div class="skill-filters">
+    <!--  SKILLS SECTION -->
+    <section class="skills container center">
+      <div class="skills-intro">
+        <p>
+          I specialize in modern web technologies and continuously expand my
+          skillset to stay at the forefront of development.
+        </p>
+      </div>
+
+      <div class="skill-filters">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="frontend">Frontend</button>
         <button class="filter-btn" data-filter="backend">Backend</button>
         <button class="filter-btn" data-filter="tools">Tools</button>
         <button class="filter-btn" data-filter="devops">DevOps</button>
-        <button class="filter-btn" data-filter="integration">Integration</button>
-    </div>
-    
-        <div class="card-grid">
+        <button class="filter-btn" data-filter="integration">
+          Integration
+        </button>
+      </div>
+
+      <div class="card-grid">
         <!-- Frontend Skills -->
         <div class="card skill-card" data-category="frontend">
-            <div class="skill-header">
-                <img src="./images/Html.png" alt="HTML">
-                <h3>HTML</h3>
-            </div>
-            <div class="skill-level">
-                <div class="skill-progress" style="width: 95%"></div>
-                <span class="skill-percent">95%</span>
-            </div>
-            <div class="skill-tags">
-                <span>Semantic HTML</span>
-                <span>Accessibility</span>
-            </div>
+          <div class="skill-header">
+            <img src="./images/Html.png" alt="HTML" />
+            <h3>HTML</h3>
+          </div>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 95%"></div>
+            <span class="skill-percent">95%</span>
+          </div>
+          <div class="skill-tags">
+            <span>Semantic HTML</span>
+            <span>Accessibility</span>
+          </div>
         </div>
-        
+
         <div class="card skill-card" data-category="frontend">
-            <div class="skill-header">
-                <img src="./images/Css.png" alt="CSS">
-                <h3>CSS</h3>
-            </div>
-            <div class="skill-level">
-                <div class="skill-progress" style="width: 90%"></div>
-                <span class="skill-percent">90%</span>
-            </div>
-            <div class="skill-tags">
-                <span>Flexbox</span>
-                <span>Grid</span>
-                <span>Animations</span>
-            </div>
+          <div class="skill-header">
+            <img src="./images/Css.png" alt="CSS" />
+            <h3>CSS</h3>
+          </div>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 90%"></div>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-tags">
+            <span>Flexbox</span>
+            <span>Grid</span>
+            <span>Animations</span>
+          </div>
         </div>
-        
+
         <div class="card skill-card" data-category="frontend">
-            <div class="skill-header">
-                <img src="./images/Sass.png" alt="SASS">
-                <h3>SASS</h3>
-            </div>
-            <div class="skill-level">
-                <div class="skill-progress" style="width: 85%"></div>
-                <span class="skill-percent">85%</span>
-            </div>
-            <div class="skill-tags">
-                <span>Mixins</span>
-                <span>Variables</span>
-            </div>
+          <div class="skill-header">
+            <img src="./images/Sass.png" alt="SASS" />
+            <h3>SASS</h3>
+          </div>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 85%"></div>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-tags">
+            <span>Mixins</span>
+            <span>Variables</span>
+          </div>
         </div>
-        
+
         <div class="card skill-card" data-category="frontend">
-            <div class="skill-header">
-                <img src="./images/Javascript.png" alt="JavaScript">
-                <h3>Javascript</h3>
-            </div>
-            <div class="skill-level">
-                <div class="skill-progress" style="width: 92%"></div>
-                <span class="skill-percent">92%</span>
-            </div>
-            <div class="skill-tags">
-                <span>ES6+</span>
-                <span>Async/Await</span>
-            </div>
+          <div class="skill-header">
+            <img src="./images/Javascript.png" alt="JavaScript" />
+            <h3>Javascript</h3>
+          </div>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 92%"></div>
+            <span class="skill-percent">92%</span>
+          </div>
+          <div class="skill-tags">
+            <span>ES6+</span>
+            <span>Async/Await</span>
+          </div>
         </div>
-        
+
         <div class="card skill-card" data-category="frontend">
-            <div class="skill-header">
-                <img src="./images/React.png" alt="React">
-                <h3>React</h3>
-            </div>
-            <div class="skill-level">
-                <div class="skill-progress" style="width: 88%"></div>
-                <span class="skill-percent">88%</span>
-            </div>
-            <div class="skill-tags">
-                <span>Hooks</span>
-                <span>Context</span>
-                <span>Redux</span>
-            </div>
+          <div class="skill-header">
+            <img src="./images/React.png" alt="React" />
+            <h3>React</h3>
+          </div>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 88%"></div>
+            <span class="skill-percent">88%</span>
+          </div>
+          <div class="skill-tags">
+            <span>Hooks</span>
+            <span>Context</span>
+            <span>Redux</span>
+          </div>
         </div>
-        
+
         <!-- Backend Skills -->
         <div class="card skill-card" data-category="backend">
-            <div class="skill-header">
-                <img src="./images/Node.png" alt="Node.js">
-                <h3>Node.js</h3>
-            </div>
-            <div class="skill-level">
-                <div class="skill-progress" style="width: 80%"></div>
-                <span class="skill-percent">80%</span>
-            </div>
-            <div class="skill-tags">
-                <span>Express</span>
-                <span>REST APIs</span>
-            </div>
+          <div class="skill-header">
+            <img src="./images/Node.png" alt="Node.js" />
+            <h3>Node.js</h3>
+          </div>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 80%"></div>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-tags">
+            <span>Express</span>
+            <span>REST APIs</span>
+          </div>
         </div>
-        
+
         <div class="card skill-card" data-category="backend">
-            <div class="skill-header">
-                <img src="./images/Mongo.png" alt="MongoDB">
-                <h3>MongoDB</h3>
-            </div>
-            <div class="skill-level">
-                <div class="skill-progress" style="width: 75%"></div>
-                <span class="skill-percent">75%</span>
-            </div>
-            <div class="skill-tags">
-                <span>Mongoose</span>
-                <span>Aggregation</span>
-            </div>
+          <div class="skill-header">
+            <img src="./images/Mongo.png" alt="MongoDB" />
+            <h3>MongoDB</h3>
+          </div>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 75%"></div>
+            <span class="skill-percent">75%</span>
+          </div>
+          <div class="skill-tags">
+            <span>Mongoose</span>
+            <span>Aggregation</span>
+          </div>
         </div>
-        
+
         <!-- Tools -->
         <div class="card skill-card" data-category="tools">
-            <div class="skill-header">
-                <div class="skill-icon">
-                    <i class="fas fa-box-open"></i>
-                </div>
-                <h3>Webpack</h3>
+          <div class="skill-header">
+            <div class="skill-icon">
+              <i class="fas fa-box-open"></i>
             </div>
-            <div class="skill-level">
-                <div class="skill-progress" style="width: 82%"></div>
-                <span class="skill-percent">82%</span>
-            </div>
-            <div class="skill-tags">
-                <span>Bundling</span>
-                <span>Optimization</span>
-            </div>
+            <h3>Webpack</h3>
+          </div>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 82%"></div>
+            <span class="skill-percent">82%</span>
+          </div>
+          <div class="skill-tags">
+            <span>Bundling</span>
+            <span>Optimization</span>
+          </div>
         </div>
-        
+
         <div class="card skill-card" data-category="tools">
-            <div class="skill-header">
-                <div class="skill-icon">
-                    <i class="fas fa-code-branch"></i>
-                </div>
-                <h3>Module Federation</h3>
+          <div class="skill-header">
+            <div class="skill-icon">
+              <i class="fas fa-code-branch"></i>
             </div>
-            <div class="skill-level">
-                <div class="skill-progress" style="width: 78%"></div>
-                <span class="skill-percent">78%</span>
-            </div>
-            <div class="skill-tags">
-                <span>Micro Frontends</span>
-                <span>Runtime Integration</span>
-            </div>
+            <h3>Module Federation</h3>
+          </div>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 78%"></div>
+            <span class="skill-percent">78%</span>
+          </div>
+          <div class="skill-tags">
+            <span>Micro Frontends</span>
+            <span>Runtime Integration</span>
+          </div>
         </div>
-        
+
         <div class="card skill-card" data-category="tools">
-            <div class="skill-header">
-                <div class="skill-icon">
-                    <i class="fab fa-git-alt"></i>
-                </div>
-                <h3>Git</h3>
+          <div class="skill-header">
+            <div class="skill-icon">
+              <i class="fab fa-git-alt"></i>
             </div>
-            <div class="skill-level">
-                <div class="skill-progress" style="width: 90%"></div>
-                <span class="skill-percent">90%</span>
-            </div>
-            <div class="skill-tags">
-                <span>Version Control</span>
-                <span>CI/CD</span>
-            </div>
+            <h3>Git</h3>
+          </div>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 90%"></div>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-tags">
+            <span>Version Control</span>
+            <span>CI/CD</span>
+          </div>
         </div>
-        
+
         <div class="card skill-card" data-category="tools">
-            <div class="skill-header">
-                <div class="skill-icon">
-                    <i class="fas fa-box"></i>
-                </div>
-                <h3>NPM</h3>
+          <div class="skill-header">
+            <div class="skill-icon">
+              <i class="fas fa-box"></i>
             </div>
-            <div class="skill-level">
-                <div class="skill-progress" style="width: 85%"></div>
-                <span class="skill-percent">85%</span>
-            </div>
-            <div class="skill-tags">
-                <span>Package Management</span>
-                <span>Scripts</span>
-            </div>
+            <h3>NPM</h3>
+          </div>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 85%"></div>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-tags">
+            <span>Package Management</span>
+            <span>Scripts</span>
+          </div>
         </div>
-        
+
         <!-- DevOps -->
         <div class="card skill-card" data-category="devops">
-            <div class="skill-header">
-                <div class="skill-icon">
-                    <i class="fab fa-docker"></i>
-                </div>
-                <h3>Docker</h3>
+          <div class="skill-header">
+            <div class="skill-icon">
+              <i class="fab fa-docker"></i>
             </div>
-            <div class="skill-level">
-                <div class="skill-progress" style="width: 78%"></div>
-                <span class="skill-percent">78%</span>
-            </div>
-            <div class="skill-tags">
-                <span>Containerization</span>
-                <span>Compose</span>
-            </div>
+            <h3>Docker</h3>
+          </div>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 78%"></div>
+            <span class="skill-percent">78%</span>
+          </div>
+          <div class="skill-tags">
+            <span>Containerization</span>
+            <span>Compose</span>
+          </div>
         </div>
-        
+
         <div class="card skill-card" data-category="devops">
-            <div class="skill-header">
-                <div class="skill-icon">
-                    <i class="fab fa-aws"></i>
-                </div>
-                <h3>AWS</h3>
+          <div class="skill-header">
+            <div class="skill-icon">
+              <i class="fab fa-aws"></i>
             </div>
-            <div class="skill-level">
-                <div class="skill-progress" style="width: 70%"></div>
-                <span class="skill-percent">70%</span>
-            </div>
-            <div class="skill-tags">
-                <span>S3</span>
-                <span>EC2</span>
-                <span>Lambda</span>
-            </div>
+            <h3>AWS</h3>
+          </div>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 70%"></div>
+            <span class="skill-percent">70%</span>
+          </div>
+          <div class="skill-tags">
+            <span>S3</span>
+            <span>EC2</span>
+            <span>Lambda</span>
+          </div>
         </div>
-        
+
         <!-- Integration Skills -->
         <div class="card skill-card" data-category="integration">
-            <div class="skill-header">
-                <div class="skill-icon">
-                    <i class="fas fa-map-marked-alt"></i>
-                </div>
-                <h3>Maps Integration</h3>
+          <div class="skill-header">
+            <div class="skill-icon">
+              <i class="fas fa-map-marked-alt"></i>
             </div>
-            <div class="skill-level">
-                <div class="skill-progress" style="width: 85%"></div>
-                <span class="skill-percent">85%</span>
-            </div>
-            <div class="skill-tags">
-                <span>Google Maps</span>
-                <span>Leaflet</span>
-                <span>Mapbox</span>
-            </div>
+            <h3>Maps Integration</h3>
+          </div>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 85%"></div>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-tags">
+            <span>Google Maps</span>
+            <span>Leaflet</span>
+            <span>Mapbox</span>
+          </div>
         </div>
-        
+
         <div class="card skill-card" data-category="integration">
-            <div class="skill-header">
-                <div class="skill-icon">
-                    <i class="fas fa-plug"></i>
-                </div>
-                <h3>API Integration</h3>
+          <div class="skill-header">
+            <div class="skill-icon">
+              <i class="fas fa-plug"></i>
             </div>
-            <div class="skill-level">
-                <div class="skill-progress" style="width: 88%"></div>
-                <span class="skill-percent">88%</span>
-            </div>
-            <div class="skill-tags">
-                <span>REST</span>
-                <span>GraphQL</span>
-                <span>OAuth</span>
-            </div>
+            <h3>API Integration</h3>
+          </div>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 88%"></div>
+            <span class="skill-percent">88%</span>
+          </div>
+          <div class="skill-tags">
+            <span>REST</span>
+            <span>GraphQL</span>
+            <span>OAuth</span>
+          </div>
         </div>
-    </div>
-    
-    <div class="skills-summary">
+      </div>
+
+      <div class="skills-summary">
         <div class="skills-chart-container">
-            <h3>Skill Proficiency</h3>
-            <div class="skills-chart">
-                <div class="chart-wrapper">
-                    <canvas id="skillsChart"></canvas>
-                </div>
+          <h3>Skill Proficiency</h3>
+          <div class="skills-chart">
+            <div class="chart-wrapper">
+              <canvas id="skillsChart"></canvas>
             </div>
+          </div>
         </div>
         <div class="skills-highlights">
-            <h3>My Expertise</h3>
-            <ul>
-                <li><i class="fas fa-check-circle"></i> <strong>Frontend Development:</strong> Building responsive, accessible, and performant user interfaces</li>
-                <li><i class="fas fa-check-circle"></i> <strong>Backend Integration:</strong> Connecting frontend applications with robust backend systems</li>
-                <li><i class="fas fa-check-circle"></i> <strong>Maps & Geolocation:</strong> Implementing interactive maps and location-based features</li>
-                <li><i class="fas fa-check-circle"></i> <strong>Micro Frontends:</strong> Utilizing Module Federation for scalable architecture</li>
-                <li><i class="fas fa-check-circle"></i> <strong>Modern Tooling:</strong> Leveraging the latest tools and techniques for optimal development</li>
-            </ul>
-            </div>
+          <h3>My Expertise</h3>
+          <ul class="expertise-list">
+            <li>
+              <div class="expertise-icon"><span class="number-icon">1</span></div>
+              <div class="expertise-content">
+                <div class="expertise-title">
+                  <strong>Frontend Development:</strong>
+                </div>
+                <p>Building responsive, accessible, and performant user interfaces</p>
+              </div>
+            </li>
+            <li>
+              <div class="expertise-icon"><span class="number-icon">2</span></div>
+              <div class="expertise-content">
+                <div class="expertise-title">
+                  <strong>Backend Integration:</strong>
+                </div>
+                <p>Connecting frontend applications with robust backend systems</p>
+              </div>
+            </li>
+            <li>
+              <div class="expertise-icon"><span class="number-icon">3</span></div>
+              <div class="expertise-content">
+                <div class="expertise-title">
+                  <strong>Maps & Geolocation:</strong>
+                </div>
+                <p>Implementing interactive maps and location-based features</p>
+              </div>
+            </li>
+            <li>
+              <div class="expertise-icon"><span class="number-icon">4</span></div>
+              <div class="expertise-content">
+                <div class="expertise-title">
+                  <strong>Micro Frontends:</strong>
+                </div>
+                <p>Utilizing Module Federation for scalable architecture</p>
+              </div>
+            </li>
+            <li>
+              <div class="expertise-icon"><span class="number-icon">5</span></div>
+              <div class="expertise-content">
+                <div class="expertise-title">
+                  <strong>Modern Tooling:</strong>
+                </div>
+                <p>Leveraging the latest tools and techniques for optimal development</p>
+              </div>
+            </li>
+          </ul>
         </div>
+      </div>
     </section>
     <!-- DIVIDER -->
-<div class="divider" id="projects">
-        <h2>Projects</h2>
+    <div class="divider" id="projects">
+      <h2>Projects</h2>
     </div>
     <!-- PROJECTS -->
     <div class="projects container center">
-    <div class="project-filters">
+      <div class="project-filters">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="web">Web</button>
         <button class="filter-btn" data-filter="app">Apps</button>
-    </div>
-        <div class="project-grid" >
+      </div>
+      <div class="project-grid">
         <div class="project-card" data-category="web">
-            <div class="card">
-                <div class="card-banner">
-                    <span class="card-tag">Featured</span>
-                </div>
-                <img src="./images/projects/picky.png" alt="Picky Website">
-                <div class="project-details">
-                    <h3>Picky</h3>
-                    <p>A food delivery website with modern UI</p>
-                    <div class="tech-stack">
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>MongoDB</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
+          <div class="card">
+            <div class="card-banner">
+              <span class="card-tag">Featured</span>
             </div>
+            <img src="./images/projects/picky.png" alt="Picky Website" />
+            <div class="project-details">
+              <h3>Picky</h3>
+              <p>A food delivery website with modern UI</p>
+              <div class="tech-stack">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="project-card" data-category="app">
-            <div class="card">
-                <img src="./images/projects/keeper.png" alt="Keeper App">
-                <div class="project-details">
-                    <h3>Keeper</h3>
-                    <p>A note-taking app built with React</p>
-                    <div class="tech-stack">
-                        <span>React</span>
-                        <span>CSS</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
+          <div class="card">
+            <img src="./images/projects/keeper.png" alt="Keeper App" />
+            <div class="project-details">
+              <h3>Keeper</h3>
+              <p>A note-taking app built with React</p>
+              <div class="tech-stack">
+                <span>React</span>
+                <span>CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
             </div>
+          </div>
         </div>
         <div class="project-card" data-category="web">
-            <div class="card">
-                <img src="./images/projects/creativemantra.png" alt="Creative Mantra">
-                <div class="project-details">
-                    <h3>Creative Mantra</h3>
-                    <p>Design agency website showcasing services</p>
-                    <div class="tech-stack">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
+          <div class="card">
+            <img
+              src="./images/projects/creativemantra.png"
+              alt="Creative Mantra"
+            />
+            <div class="project-details">
+              <h3>Creative Mantra</h3>
+              <p>Design agency website showcasing services</p>
+              <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
             </div>
+          </div>
         </div>
         <div class="project-card" data-category="app">
-            <div class="card">
-                <div class="card-banner">
-                    <span class="card-tag">New</span>
-                </div>
-                <img src="./images/projects/noraa.png" alt="Noraa App">
-                <div class="project-details">
-                    <h3>Noraa</h3>
-                    <p>Voice assistant application for daily tasks</p>
-                    <div class="tech-stack">
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>Speech API</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
+          <div class="card">
+            <div class="card-banner">
+              <span class="card-tag">New</span>
             </div>
+            <img src="./images/projects/noraa.png" alt="Noraa App" />
+            <div class="project-details">
+              <h3>Noraa</h3>
+              <p>Voice assistant application for daily tasks</p>
+              <div class="tech-stack">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Speech API</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="project-card" data-category="web">
-            <div class="card">
-                <img src="./images/projects/tindog.png" alt="Tindog">
-                <div class="project-details">
-                    <h3>Tindog</h3>
-                    <p>A tinder clone for dog owners to find matches</p>
-                    <div class="tech-stack">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Bootstrap</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
+          <div class="card">
+            <img src="./images/projects/tindog.png" alt="Tindog" />
+            <div class="project-details">
+              <h3>Tindog</h3>
+              <p>A tinder clone for dog owners to find matches</p>
+              <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Bootstrap</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
             </div>
+          </div>
         </div>
         <div class="project-card" data-category="web">
-            <div class="card">
-                <img src="./images/projects/chakhhna.png" alt="Chakhhna">
-                <div class="project-details">
-                    <h3>Chakhhna</h3>
-                    <p>Restaurant website with menu and ordering system</p>
-                    <div class="tech-stack">
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>MongoDB</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
+          <div class="card">
+            <img src="./images/projects/chakhhna.png" alt="Chakhhna" />
+            <div class="project-details">
+              <h3>Chakhhna</h3>
+              <p>Restaurant website with menu and ordering system</p>
+              <div class="tech-stack">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<!-- MENTORSHIP SECTION -->
-<div class="divider" id="mentorship">
-    <h2>Mentorship</h2>
-</div>
-<section class="mentorship container center">
-    <div class="mentorship-intro">
+    <!-- MENTORSHIP SECTION -->
+    <div class="divider" id="mentorship">
+      <h2>Mentorship</h2>
+    </div>
+    <section class="mentorship container center">
+      <div class="mentorship-intro">
         <h3>Personalized Tech Career Mentorship</h3>
-        <p>I provide comprehensive mentorship programs designed to accelerate your growth in the tech industry. Whether you're just starting out or looking to level up your skills, my approach focuses on practical, hands-on learning with real-world applications.</p>
-    </div>
-    
-    <div class="mentorship-grid">
+        <p>
+          I provide comprehensive mentorship programs designed to accelerate
+          your growth in the tech industry. Whether you're just starting out or
+          looking to level up your skills, my approach focuses on practical,
+          hands-on learning with real-world applications.
+        </p>
+      </div>
+
+      <div class="mentorship-grid">
         <div class="mentorship-card">
-            <div class="mentorship-icon">
-                <i class="fas fa-laptop-code"></i>
-            </div>
-            <h3>Frontend Development Mastery</h3>
-            <p>Master modern frontend technologies with a comprehensive curriculum that takes you from fundamentals to advanced concepts.</p>
-            <ul class="mentorship-features">
-                <li><i class="fas fa-check-circle"></i> HTML5, CSS3 & JavaScript fundamentals</li>
-                <li><i class="fas fa-check-circle"></i> React, Vue, and Next.js frameworks</li>
-                <li><i class="fas fa-check-circle"></i> Responsive design & accessibility</li>
-                <li><i class="fas fa-check-circle"></i> Performance optimization techniques</li>
-            </ul>
+          <div class="mentorship-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Frontend Development Mastery</h3>
+          <p>
+            Master modern frontend technologies with a comprehensive curriculum
+            that takes you from fundamentals to advanced concepts.
+          </p>
+          <ul class="mentorship-features">
+            <li>
+              <i class="fas fa-check-circle"></i> HTML5, CSS3 & JavaScript
+              fundamentals
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> React, Vue, and Next.js
+              frameworks
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Responsive design &
+              accessibility
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Performance optimization
+              techniques
+            </li>
+          </ul>
         </div>
-        
+
         <div class="mentorship-card featured">
-            <div class="ribbon">Most Popular</div>
-            <div class="mentorship-icon">
-                <i class="fas fa-robot"></i>
-            </div>
-            <h3>AI-Enhanced Development</h3>
-            <p>Learn to leverage cutting-edge AI tools to dramatically improve your productivity and stand out in the job market.</p>
-            <ul class="mentorship-features">
-                <li><i class="fas fa-check-circle"></i> Effective prompt engineering</li>
-                <li><i class="fas fa-check-circle"></i> GitHub Copilot mastery</li>
-                <li><i class="fas fa-check-circle"></i> AI-powered code reviews</li>
-                <li><i class="fas fa-check-circle"></i> Workflow automation with AI</li>
-            </ul>
+          <div class="ribbon">Most Popular</div>
+          <div class="mentorship-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3>AI-Enhanced Development</h3>
+          <p>
+            Learn to leverage cutting-edge AI tools to dramatically improve your
+            productivity and stand out in the job market.
+          </p>
+          <ul class="mentorship-features">
+            <li>
+              <i class="fas fa-check-circle"></i> Effective prompt engineering
+            </li>
+            <li><i class="fas fa-check-circle"></i> GitHub Copilot mastery</li>
+            <li><i class="fas fa-check-circle"></i> AI-powered code reviews</li>
+            <li>
+              <i class="fas fa-check-circle"></i> Workflow automation with AI
+            </li>
+          </ul>
         </div>
-        
+
         <div class="mentorship-card">
-            <div class="mentorship-icon">
-                <i class="fas fa-briefcase"></i>
-            </div>
-            <h3>Career Acceleration</h3>
-            <p>Transform your career prospects with a comprehensive program that prepares you for the job market and beyond.</p>
-            <ul class="mentorship-features">
-                <li><i class="fas fa-check-circle"></i> Portfolio development</li>
-                <li><i class="fas fa-check-circle"></i> Interview preparation</li>
-                <li><i class="fas fa-check-circle"></i> Resume & LinkedIn optimization</li>
-                <li><i class="fas fa-check-circle"></i> Salary negotiation tactics</li>
-            </ul>
+          <div class="mentorship-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3>Career Acceleration</h3>
+          <p>
+            Transform your career prospects with a comprehensive program that
+            prepares you for the job market and beyond.
+          </p>
+          <ul class="mentorship-features">
+            <li><i class="fas fa-check-circle"></i> Portfolio development</li>
+            <li><i class="fas fa-check-circle"></i> Interview preparation</li>
+            <li>
+              <i class="fas fa-check-circle"></i> Resume & LinkedIn optimization
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Salary negotiation tactics
+            </li>
+          </ul>
         </div>
-    </div>
-    
-    <div class="roadmap-container">
+      </div>
+
+      <div class="roadmap-container">
         <div class="roadmap-header">
-            <h3>Your Path to Success</h3>
-            <p>A carefully structured roadmap taking you from where you are now to where you want to be</p>
+          <h3>Your Path to Success</h3>
+          <p>
+            A carefully structured roadmap taking you from where you are now to
+            where you want to be
+          </p>
         </div>
-        
+
         <div class="modern-roadmap">
-            <div class="roadmap-stage">
-                <div class="stage-number">1</div>
-                <div class="stage-icon"><i class="fas fa-search"></i></div>
-                <h4>Skills Assessment & Goal Setting</h4>
-                <p>We'll evaluate your current skills, understand your career aspirations, and create a tailored learning roadmap.</p>
-                <div class="stage-skills">
-                    <span>Skill Audit</span>
-                    <span>Career Goals</span>
-                    <span>Learning Path</span>
-                </div>
+          <div class="roadmap-stage">
+            <div class="stage-number">1</div>
+            <div class="stage-icon"><i class="fas fa-search"></i></div>
+            <h4>Skills Assessment & Goal Setting</h4>
+            <p>
+              We'll evaluate your current skills, understand your career
+              aspirations, and create a tailored learning roadmap.
+            </p>
+            <div class="stage-skills">
+              <span>Skill Audit</span>
+              <span>Career Goals</span>
+              <span>Learning Path</span>
             </div>
-            
-            <div class="roadmap-stage">
-                <div class="stage-number">2</div>
-                <div class="stage-icon"><i class="fas fa-code"></i></div>
-                <h4>Core Technology Foundations</h4>
-                <p>Master the essential technologies that form the foundation of modern web development with hands-on projects.</p>
-                <div class="stage-skills">
-                    <span>HTML/CSS</span>
-                    <span>JavaScript</span>
-                    <span>Version Control</span>
-                </div>
+          </div>
+
+          <div class="roadmap-stage">
+            <div class="stage-number">2</div>
+            <div class="stage-icon"><i class="fas fa-code"></i></div>
+            <h4>Core Technology Foundations</h4>
+            <p>
+              Master the essential technologies that form the foundation of
+              modern web development with hands-on projects.
+            </p>
+            <div class="stage-skills">
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>Version Control</span>
             </div>
-            
-            <div class="roadmap-stage">
-                <div class="stage-number">3</div>
-                <div class="stage-icon"><i class="fab fa-react"></i></div>
-                <h4>Framework & Library Expertise</h4>
-                <p>Develop expertise in in-demand frameworks and libraries through guided practice and real-world application.</p>
-                <div class="stage-skills">
-                    <span>React</span>
-                    <span>State Management</span>
-                    <span>Modern APIs</span>
-                </div>
+          </div>
+
+          <div class="roadmap-stage">
+            <div class="stage-number">3</div>
+            <div class="stage-icon"><i class="fab fa-react"></i></div>
+            <h4>Framework & Library Expertise</h4>
+            <p>
+              Develop expertise in in-demand frameworks and libraries through
+              guided practice and real-world application.
+            </p>
+            <div class="stage-skills">
+              <span>React</span>
+              <span>State Management</span>
+              <span>Modern APIs</span>
             </div>
-            
-            <div class="roadmap-stage">
-                <div class="stage-number">4</div>
-                <div class="stage-icon"><i class="fas fa-robot"></i></div>
-                <h4>AI Tool Integration</h4>
-                <p>Learn to leverage AI tools to solve complex problems, automate workflows, and increase your output quality and speed.</p>
-                <div class="stage-skills">
-                    <span>Copilot</span>
-                    <span>ChatGPT</span>
-                    <span>Claude</span>
-                </div>
+          </div>
+
+          <div class="roadmap-stage">
+            <div class="stage-number">4</div>
+            <div class="stage-icon"><i class="fas fa-robot"></i></div>
+            <h4>AI Tool Integration</h4>
+            <p>
+              Learn to leverage AI tools to solve complex problems, automate
+              workflows, and increase your output quality and speed.
+            </p>
+            <div class="stage-skills">
+              <span>Copilot</span>
+              <span>ChatGPT</span>
+              <span>Claude</span>
             </div>
-            
-            <div class="roadmap-stage">
-                <div class="stage-number">5</div>
-                <div class="stage-icon"><i class="fas fa-project-diagram"></i></div>
-                <h4>Portfolio Development</h4>
-                <p>Build impressive projects that demonstrate your skills and make you stand out to potential employers.</p>
-                <div class="stage-skills">
-                    <span>Project Architecture</span>
-                    <span>Best Practices</span>
-                    <span>Code Quality</span>
-                </div>
+          </div>
+
+          <div class="roadmap-stage">
+            <div class="stage-number">5</div>
+            <div class="stage-icon"><i class="fas fa-project-diagram"></i></div>
+            <h4>Portfolio Development</h4>
+            <p>
+              Build impressive projects that demonstrate your skills and make
+              you stand out to potential employers.
+            </p>
+            <div class="stage-skills">
+              <span>Project Architecture</span>
+              <span>Best Practices</span>
+              <span>Code Quality</span>
             </div>
-            
-            <div class="roadmap-stage">
-                <div class="stage-number">6</div>
-                <div class="stage-icon"><i class="fas fa-rocket"></i></div>
-                <h4>Career Launch</h4>
-                <p>Prepare for interviews, optimize your job applications, and develop strategies for launching your new career.</p>
-                <div class="stage-skills">
-                    <span>Interview Prep</span>
-                    <span>Job Search</span>
-                    <span>Networking</span>
-                </div>
+          </div>
+
+          <div class="roadmap-stage">
+            <div class="stage-number">6</div>
+            <div class="stage-icon"><i class="fas fa-rocket"></i></div>
+            <h4>Career Launch</h4>
+            <p>
+              Prepare for interviews, optimize your job applications, and
+              develop strategies for launching your new career.
+            </p>
+            <div class="stage-skills">
+              <span>Interview Prep</span>
+              <span>Job Search</span>
+              <span>Networking</span>
             </div>
+          </div>
         </div>
-    </div>
-    
-    <div class="success-stories">
+      </div>
+
+      <div class="success-stories">
         <h3>Success Stories</h3>
         <div class="success-grid">
-            <div class="success-card">
-                <div class="success-image">
-                    <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Success Story">
-                </div>
-                <div class="success-content">
-                    <p>"Dibya's mentorship transformed my career. In just 6 months, I went from struggling with basic JavaScript to landing a React developer role at a startup with a 40% salary increase."</p>
-                    <div class="success-info">
-                        <h4>Rohit K.</h4>
-                        <p>Frontend Developer</p>
-                        <div class="success-progress">
-                            <span>Marketing Associate</span>
-                            <span>→</span>
-                            <span>React Developer</span>
-                        </div>
-                    </div>
-                </div>
+          <div class="success-card">
+            <div class="success-image">
+              <img
+                src="https://randomuser.me/api/portraits/men/42.jpg"
+                alt="Success Story"
+              />
             </div>
-            <div class="success-card">
-                <div class="success-image">
-                    <img src="https://randomuser.me/api/portraits/women/58.jpg" alt="Success Story">
+            <div class="success-content">
+              <p>
+                "Dibya's mentorship transformed my career. In just 6 months, I
+                went from struggling with basic JavaScript to landing a React
+                developer role at a startup with a 40% salary increase."
+              </p>
+              <div class="success-info">
+                <h4>Rohit K.</h4>
+                <p>Frontend Developer</p>
+                <div class="success-progress">
+                  <span>Marketing Associate</span>
+                  <span>→</span>
+                  <span>React Developer</span>
                 </div>
-                <div class="success-content">
-                    <p>"The AI tools and workflows Dibya taught me have been game-changing. I'm now twice as productive as my peers, and it helped me secure a senior position just 18 months into my career."</p>
-                    <div class="success-info">
-                        <h4>Priya M.</h4>
-                        <p>Senior Frontend Engineer</p>
-                        <div class="success-progress">
-                            <span>Junior Developer</span>
-                            <span>→</span>
-                            <span>Senior Engineer</span>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <div class="success-card">
-                <div class="success-image">
-                    <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="Success Story">
-                </div>
-                <div class="success-content">
-                    <p>"As a career switcher with no technical background, I was overwhelmed by the learning path. Dibya broke it down into manageable steps and provided constant guidance. Now I'm a confident web developer."</p>
-                    <div class="success-info">
-                        <h4>Amit G.</h4>
-                        <p>Web Developer</p>
-                        <div class="success-progress">
-                            <span>Accounting</span>
-                            <span>→</span>
-                            <span>Web Development</span>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="success-card">
+            <div class="success-image">
+              <img
+                src="https://randomuser.me/api/portraits/women/58.jpg"
+                alt="Success Story"
+              />
             </div>
+            <div class="success-content">
+              <p>
+                "The AI tools and workflows Dibya taught me have been
+                game-changing. I'm now twice as productive as my peers, and it
+                helped me secure a senior position just 18 months into my
+                career."
+              </p>
+              <div class="success-info">
+                <h4>Priya M.</h4>
+                <p>Senior Frontend Engineer</p>
+                <div class="success-progress">
+                  <span>Junior Developer</span>
+                  <span>→</span>
+                  <span>Senior Engineer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="success-card">
+            <div class="success-image">
+              <img
+                src="https://randomuser.me/api/portraits/men/36.jpg"
+                alt="Success Story"
+              />
+            </div>
+            <div class="success-content">
+              <p>
+                "As a career switcher with no technical background, I was
+                overwhelmed by the learning path. Dibya broke it down into
+                manageable steps and provided constant guidance. Now I'm a
+                confident web developer."
+              </p>
+              <div class="success-info">
+                <h4>Amit G.</h4>
+                <p>Web Developer</p>
+                <div class="success-progress">
+                  <span>Accounting</span>
+                  <span>→</span>
+                  <span>Web Development</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    
-    <div class="mentorship-cta">
+      </div>
+
+      <div class="mentorship-cta">
         <h3>Ready to accelerate your tech career?</h3>
-        <p>Book a free 30-minute strategy session to discuss your goals and create a personalized roadmap to success.</p>
-        <a href="#contact" class="btn primary-btn">Schedule Your Free Session</a>
-    </div>
-</section>
+        <p>
+          Book a free 30-minute strategy session to discuss your goals and
+          create a personalized roadmap to success.
+        </p>
+        <a href="#contact" class="btn primary-btn"
+          >Schedule Your Free Session</a
+        >
+      </div>
+    </section>
 
-<!-- TESTIMONIALS -->
-<div class="divider">
-    <h2>Testimonials</h2>
-</div>
-<div class="testimonials container center">
-    <div class="testimonial-slider">
+    <!-- TESTIMONIALS -->
+    <div class="divider">
+      <h2>Testimonials</h2>
+    </div>
+    <div class="testimonials container center">
+      <div class="testimonial-slider">
         <div class="testimonial-slide active">
-            <div class="testimonial-content">
-                <div class="quote"><i class="fas fa-quote-left"></i></div>
-                <p>Dibyadarshi created an exceptional website that perfectly captured our brand's essence. His attention to detail and creative approach exceeded our expectations.</p>
-                <div class="testimonial-author">
-                    <h4>John Doe</h4>
-                    <p>CEO, Creative Mantra</p>
-                </div>
+          <div class="testimonial-content">
+            <div class="quote"><i class="fas fa-quote-left"></i></div>
+            <p>
+              Dibyadarshi created an exceptional website that perfectly captured
+              our brand's essence. His attention to detail and creative approach
+              exceeded our expectations.
+            </p>
+            <div class="testimonial-author">
+              <h4>John Doe</h4>
+              <p>CEO, Creative Mantra</p>
             </div>
+          </div>
         </div>
         <div class="testimonial-slide">
-            <div class="testimonial-content">
-                <div class="quote"><i class="fas fa-quote-left"></i></div>
-                <p>Working with Dibyadarshi was a fantastic experience. He took the time to understand our needs and delivered a website that has significantly increased our online visibility.</p>
-                <div class="testimonial-author">
-                    <h4>Jane Smith</h4>
-                    <p>Founder, Picky Foods</p>
-                </div>
+          <div class="testimonial-content">
+            <div class="quote"><i class="fas fa-quote-left"></i></div>
+            <p>
+              Working with Dibyadarshi was a fantastic experience. He took the
+              time to understand our needs and delivered a website that has
+              significantly increased our online visibility.
+            </p>
+            <div class="testimonial-author">
+              <h4>Jane Smith</h4>
+              <p>Founder, Picky Foods</p>
             </div>
+          </div>
         </div>
         <div class="testimonial-slide">
-            <div class="testimonial-content">
-                <div class="quote"><i class="fas fa-quote-left"></i></div>
-                <p>Dibyadarshi's expertise in web development is truly impressive. He not only built a beautiful site for us but also provided valuable insights to improve our user experience.</p>
-                <div class="testimonial-author">
-                    <h4>Mark Johnson</h4>
-                    <p>CTO, TechInnovate</p>
-                </div>
+          <div class="testimonial-content">
+            <div class="quote"><i class="fas fa-quote-left"></i></div>
+            <p>
+              Dibyadarshi's expertise in web development is truly impressive. He
+              not only built a beautiful site for us but also provided valuable
+              insights to improve our user experience.
+            </p>
+            <div class="testimonial-author">
+              <h4>Mark Johnson</h4>
+              <p>CTO, TechInnovate</p>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="testimonial-nav">
-        <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+      </div>
+      <div class="testimonial-nav">
+        <button class="testimonial-prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
         <div class="testimonial-dots">
-            <span class="dot active" data-slide="0"></span>
-            <span class="dot" data-slide="1"></span>
-            <span class="dot" data-slide="2"></span>
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
         </div>
-        <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+        <button class="testimonial-next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
     </div>
-</div>
 
-<!-- CONTACT FORM -->
-<div class="divider" id="contact">
-    <h2>Get In Touch</h2>
-</div>
-<section class="contact">
-    <div class="contact-container">
+    <!-- CONTACT FORM -->
+    <div class="divider" id="contact">
+      <h2>Get In Touch</h2>
+    </div>
+    <section class="contact">
+      <div class="contact-container">
         <div class="contact-header">
-            <span class="contact-accent">Let's Connect</span>
-            <h3>Have a Project in Mind?</h3>
-            <p>Whether you need a website, mentorship, or just want to say hello, I'm always open to discussing new opportunities and ideas.</p>
+          <span class="contact-accent">Let's Connect</span>
+          <h3>Have a Project in Mind?</h3>
+          <p>
+            Whether you need a website, mentorship, or just want to say hello,
+            I'm always open to discussing new opportunities and ideas.
+          </p>
         </div>
-        
-        <div class="contact-cards">
-            <div class="contact-card">
-                <div class="contact-card-icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <h4>Email Me</h4>
-                <p>ddas270@gmail.com</p>
-                <a href="mailto:ddas270@gmail.com" class="contact-link">
-                    <span>Send Email</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-            
-            <div class="contact-card featured-card">
-                <div class="contact-card-icon">
-                    <i class="fas fa-phone"></i>
-                </div>
-                <h4>Call Me</h4>
-                <p>+91 7008347451</p>
-                <a href="tel:+917008347451" class="contact-link">
-                    <span>Call Now</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-            
-            <div class="contact-card">
-                <div class="contact-card-icon">
-                    <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <h4>Location</h4>
-                <p>Odisha, India</p>
-                <a href="https://maps.google.com?q=Odisha,India" target="_blank" class="contact-link">
-                    <span>View on Map</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-        
-        <div class="contact-form-wrapper">
-            <div class="contact-form-container">
-                <div class="contact-form-header">
-                    <h4>Send Me a Message</h4>
-                    <p>I'll get back to you as soon as possible</p>
-                </div>
-                
-                <form id="contactForm" class="contact-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <div class="input-with-icon">
-                                <i class="fas fa-user"></i>
-                                <input type="text" id="name" name="name" placeholder="John Doe" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <div class="input-with-icon">
-                                <i class="fas fa-envelope"></i>
-                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <div class="input-with-icon">
-                            <i class="fas fa-pencil-alt"></i>
-                            <input type="text" id="subject" name="subject" placeholder="How can I help you?" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <div class="input-with-icon textarea-icon">
-                            <i class="fas fa-comment-alt"></i>
-                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or inquiry..." required></textarea>
-                        </div>
-                    </div>
-                    <div class="form-submit">
-                        <button type="submit" class="primary-btn">
-                            <span>Send Message</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </div>
-                    
-                    <div class="form-success">
-                        <i class="fas fa-check-circle"></i>
-                        <h4>Message Sent!</h4>
-                        <p>Thank you for reaching out. I'll get back to you soon.</p>
-                    </div>
-                </form>
-            </div>
-            
-            <div class="contact-decoration">
-                <div class="decoration-circle"></div>
-                <div class="decoration-dots"></div>
-            </div>
-        </div>
-        
-        <div class="contact-socials">
-            <h4>Find Me On</h4>
-            <div class="social-links">
-                <a href="https://github.com/Dibyadarshidas" target="_blank" aria-label="GitHub" class="social-btn">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/dibyadas/" target="_blank" aria-label="LinkedIn" class="social-btn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://dribbble.com/Dibyadarshi" target="_blank" aria-label="Dribbble" class="social-btn">
-                    <i class="fab fa-dribbble"></i>
-                </a>
-                <a href="https://wa.me/+917008347451" target="_blank" aria-label="WhatsApp" class="social-btn">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- FOOTER -->
-<footer>
-    <div class="footer-content">
-        <div class="footer-logo">Didas</div>
-        <p>If you are interested to hire me for your website, get mentorship, or collaborate on an awesome idea.</p>
-    <div class="cta" >
-        <a href="mailto:ddas270@gmail.com?subject=Mail from My Site"> <span><i class="far fa-envelope"></i></span> Mail Me</a>
-    <a href="https://wa.me/+917008347451"> <span><i class="fab fa-whatsapp"></i></span> Ping Me</a>
-    </div>
-    </div>
-    <div class="footer-bottom">
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h4>Email Me</h4>
+            <p>ddas270@gmail.com</p>
+            <a href="mailto:ddas270@gmail.com" class="contact-link">
+              <span>Send Email</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="contact-card featured-card">
+            <div class="contact-card-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h4>Call Me</h4>
+            <p>+91 7008347451</p>
+            <a href="tel:+917008347451" class="contact-link">
+              <span>Call Now</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h4>Location</h4>
+            <p>Odisha, India</p>
+            <a
+              href="https://maps.google.com?q=Odisha,India"
+              target="_blank"
+              class="contact-link"
+            >
+              <span>View on Map</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <div class="contact-form-container">
+            <div class="contact-form-header">
+              <h4>Send Me a Message</h4>
+              <p>I'll get back to you as soon as possible</p>
+            </div>
+
+            <form id="contactForm" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <div class="input-with-icon">
+                    <i class="fas fa-user"></i>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="John Doe"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email">Your Email</label>
+                  <div class="input-with-icon">
+                    <i class="fas fa-envelope"></i>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="john@example.com"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-pencil-alt"></i>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="How can I help you?"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <div class="input-with-icon textarea-icon">
+                  <i class="fas fa-comment-alt"></i>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Tell me about your project or inquiry..."
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <div class="form-submit">
+                <button type="submit" class="primary-btn">
+                  <span>Send Message</span>
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+
+              <div class="form-success">
+                <i class="fas fa-check-circle"></i>
+                <h4>Message Sent!</h4>
+                <p>Thank you for reaching out. I'll get back to you soon.</p>
+              </div>
+            </form>
+          </div>
+
+          <div class="contact-decoration">
+            <div class="decoration-circle"></div>
+            <div class="decoration-dots"></div>
+          </div>
+        </div>
+
+        <div class="contact-socials">
+          <h4>Find Me On</h4>
+          <div class="social-links">
+            <a
+              href="https://github.com/Dibyadarshidas"
+              target="_blank"
+              aria-label="GitHub"
+              class="social-btn"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/dibyadas/"
+              target="_blank"
+              aria-label="LinkedIn"
+              class="social-btn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://dribbble.com/Dibyadarshi"
+              target="_blank"
+              aria-label="Dribbble"
+              class="social-btn"
+            >
+              <i class="fab fa-dribbble"></i>
+            </a>
+            <a
+              href="https://wa.me/+917008347451"
+              target="_blank"
+              aria-label="WhatsApp"
+              class="social-btn"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-bottom">
         <div class="back-to-top">
-            <a href="#" id="top-button"><i class="fas fa-arrow-up"></i></a>
+          <a href="#" id="top-button"><i class="fas fa-arrow-up"></i></a>
         </div>
         <p>Made with ❤ by Dibyadarshi Das</p>
         <p class="copyright">© 2023 All Rights Reserved</p>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<!-- Newsletter Popup -->
-<div id="newsletter-popup" class="newsletter-overlay">
-    <div class="newsletter-container">
-        <button class="newsletter-close" aria-label="Close popup">&times;</button>
+    <!-- Newsletter Popup -->
+    <div id="newsletter-popup" class="newsletter-overlay">
+      <div class="newsletter-container">
+        <button class="newsletter-close" aria-label="Close popup">
+          &times;
+        </button>
         <div class="newsletter-content">
-            <h3>Join My Developer Newsletter</h3>
-            <p>Get weekly insights on frontend development, AI tools, and career growth tips directly to your inbox.</p>
-            <form class="newsletter-form">
-                <input type="text" placeholder="Your name" required>
-                <input type="email" placeholder="Your email address" required>
-                <button type="submit" class="newsletter-button">Subscribe</button>
-            </form>
-            <div class="newsletter-success">
-                <svg viewBox="0 0 24 24" width="32" height="32">
-                    <path fill="currentColor" d="M9,16.17L4.83,12l-1.42,1.41L9,19 21,7l-1.41-1.41L9,16.17z"></path>
-                </svg>
-                <h4>You're in!</h4>
-                <p>Thanks for subscribing to my newsletter.</p>
-            </div>
+          <h3>Join My Developer Newsletter</h3>
+          <p>
+            Get weekly insights on frontend development, AI tools, and career
+            growth tips directly to your inbox.
+          </p>
+          <form class="newsletter-form">
+            <input type="text" placeholder="Your name" required />
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit" class="newsletter-button">Subscribe</button>
+          </form>
+          <div class="newsletter-success">
+            <svg viewBox="0 0 24 24" width="32" height="32">
+              <path
+                fill="currentColor"
+                d="M9,16.17L4.83,12l-1.42,1.41L9,19 21,7l-1.41-1.41L9,16.17z"
+              ></path>
+            </svg>
+            <h4>You're in!</h4>
+            <p>Thanks for subscribing to my newsletter.</p>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<!-- FLOATING CTA -->
-<div class="floating-cta">
-    <button class="floating-cta-btn">
+    <!-- FLOATING CTA -->
+    <div class="floating-cta">
+      <button class="floating-cta-btn">
         <i class="fas fa-comment-alt"></i>
         <span>Let's Chat</span>
-    </button>
-</div>
+      </button>
+    </div>
 
-<!-- SCRIPTS -->
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
-

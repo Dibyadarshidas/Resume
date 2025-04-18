@@ -21,6 +21,9 @@
     --text-color-light: rgba(var(--text-rgb), 0.7);
     --text-rgb: 255, 255, 255;
     --text-dark: #333;
+    --accent-color: #ff5722;
+    --accent-color-light: #ff7043;
+    --border-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Light theme variables */
@@ -808,12 +811,36 @@ body{
 
 /* Skills chart */
 .skills-chart {
-    background: var(--card-bg);
-    padding: 2rem;
-    border-radius: var(--border-radius);
-    max-width: 800px;
-    margin: 0 auto;
-    box-shadow: var(--box-shadow);
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.skills-chart-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: visible;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 992px) {
+    .skills-chart-container {
+        width: 100%;
+        max-width: 550px;
+        margin: 0 auto;
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-chart-container {
+        max-width: 100%;
+        padding: 0 10px 20px;
+    }
 }
 
 @media (max-width:1024px) {
@@ -1703,10 +1730,9 @@ body{
 footer{
     background: var(--bg-color);
     text-align: center;
-    padding: 4rem 2rem 2rem;
+    padding: 2rem 2rem 2rem;
     color: var(--text-color);
     margin-top: 4rem;
-    border-top: 1px solid rgba(var(--text-rgb), 0.1);
 }
 
 .footer-content {
@@ -2181,6 +2207,9 @@ footer{
 /* MENTORSHIP SECTION */
 .mentorship {
     margin: 4rem auto;
+    width: 90%;
+    max-width: 1200px;
+    box-sizing: border-box;
 }
 
 .mentorship-intro {
@@ -2209,6 +2238,7 @@ footer{
     width: 100%; /* Ensure full width */
     box-sizing: border-box; /* Ensure padding is included in width calculation */
     overflow-x: hidden; /* Prevent horizontal scrollbar */
+    padding: 0 15px; /* Add horizontal padding */
 }
 
 .mentorship-card {
@@ -2365,6 +2395,8 @@ footer{
 @media (max-width: 768px) {
     .mentorship-grid {
         grid-template-columns: 1fr;
+        padding: 0 10px;
+        width: 100%;
     }
     
     .mentorship-card.featured {
@@ -2373,6 +2405,11 @@ footer{
     
     .mentee-grid {
         grid-template-columns: 1fr;
+    }
+
+    .mentorship {
+        width: 95%; /* Slightly wider on mobile but still with margins */
+        padding: 0;
     }
 }
 
@@ -2716,25 +2753,42 @@ html, body {
 /* Chart wrapper fix */
 .chart-wrapper {
     position: relative;
-    height: 300px;
+    height: 340px;
     width: 100%;
+    margin: 0 auto;
+    overflow: visible;
 }
 
 @media (max-width: 992px) {
     .chart-wrapper {
-        height: 350px;
+        height: 400px;
     }
 }
 
 @media (max-width: 768px) {
     .chart-wrapper {
-        height: 300px;
+        height: 380px;
+    }
+    
+    .skills-chart {
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+        max-height: none !important;
     }
 }
 
 @media (max-width: 480px) {
     .chart-wrapper {
-        height: 250px;
+        height: 360px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        transform: scale(0.95);
+        transform-origin: center top;
+    }
+    
+    .skills-chart {
+        height: auto !important;
+        max-height: none !important;
     }
 }
 
@@ -4035,7 +4089,8 @@ html, body {
 .skills-highlights li {
     margin-bottom: 15px;
     position: relative;
-    padding-left: 30px;
+    display: flex;
+    align-items: flex-start;
     line-height: 1.5;
 }
 
@@ -4043,16 +4098,42 @@ html, body {
     margin-bottom: 0;
 }
 
-.skills-highlights li i {
+.expertise-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.expertise-icon {
+    flex-shrink: 0;
+    margin-top: 2px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.expertise-content {
+    flex: 1;
+    position: relative;
+}
+
+.expertise-number {
+    font-size: 14px;
+    font-weight: 700;
     color: var(--primary-color);
-    position: absolute;
-    left: 0;
-    top: 3px;
+    opacity: 0.7;
+    margin-right: 8px;
+    display: inline-block;
 }
 
 .skills-highlights strong {
     font-weight: 600;
     color: var(--text-color);
+    display: inline-block;
+    margin-right: 5px;
 }
 
 /* Responsive improvements for the skills summary */
@@ -4289,7 +4370,6 @@ html, body {
     overflow-x: hidden; /* Only hide horizontal overflow, allow vertical */
     overflow-y: visible; /* Explicitly make vertical visible */
 }
-
 /* Project card adjustments */
 .project-card, .mentorship-card {
     height: auto; /* Let height adjust naturally */
@@ -4310,7 +4390,7 @@ html, body {
     overflow-x: clip; /* Clip content horizontally to prevent horizontal scroll */
     height: auto !important; /* Let height adjust to content */
     min-height: auto !important; /* Override any min-height values */
-    padding: 1px 0; /* Minimal padding to prevent margin collapse */
+    padding: 1px 15px; /* Add horizontal padding and minimal vertical padding to prevent margin collapse */
 }
 
 /* Card styles to ensure proper display */
@@ -4326,6 +4406,7 @@ html, body {
     overflow: hidden; /* This parent container should hide any overflow */
     overflow-y: visible; /* But allow vertical overflow */
     padding-bottom: 1px; /* Prevent margin collapse */
+    padding: 0 15px; /* Add horizontal padding */
 }
 
 /* Mobile specific fixes */
@@ -4337,6 +4418,7 @@ html, body {
         gap: 20px;
         overflow: visible;
         height: auto !important;
+        padding: 0 15px; /* Ensure horizontal padding on mobile */
     }
     
     /* Project card container */
@@ -4345,13 +4427,16 @@ html, body {
         overflow-y: visible;
         width: 100%;
         max-width: 100%;
-        padding: 0;
+        padding: 0 15px; /* Add padding on container */
+        box-sizing: border-box; /* Ensure padding is included in width */
     }
     
     /* Project card adjustments */
     .project-card, .mentorship-card {
         width: 100%;
         margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -4359,13 +4444,14 @@ html, body {
 @media (max-width: 480px) {
     .project-grid, .mentorship-grid {
         margin: 0;
-        padding: 0;
+        padding: 0 15px; /* Keep horizontal padding for small screens */
     }
     
     /* Make sure no fixed heights are creating issues */
     .project-card, .mentorship-card {
         height: auto !important;
         min-height: auto !important;
+        width: 100%; /* Full width but with the container's padding */
     }
 }
 
@@ -4640,5 +4726,149 @@ html, body {
 }
 
 /* Remove duplicate @media sections for hero image */
+
+/* Skills highlights - modern redesign */
+.skills-highlights {
+    margin-top: 2rem;
+}
+
+.skills-highlights h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    position: relative;
+    display: inline-block;
+}
+
+.skills-highlights h3:after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--accent-color);
+    border-radius: 2px;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.expertise-item {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color, rgba(255, 255, 255, 0.1));
+}
+
+.expertise-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+}
+
+.expertise-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--accent-color-light, #6e57e0), var(--accent-color, #5e3bee));
+    color: white;
+    font-size: 1.2rem;
+}
+
+.expertise-content {
+    flex: 1;
+}
+
+.expertise-content h4 {
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem 0;
+    color: var(--text-color);
+}
+
+.expertise-content p {
+    margin: 0;
+    padding-left: 0;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    padding-top: 4px;
+}
+
+/* Dark theme specific styles */
+.dark-theme .expertise-item {
+    background: var(--card-bg, #2a2a2a);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .expertise-item {
+        padding: 1.25rem;
+    }
+}
+
+.expertise-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.expertise-title strong {
+    font-size: 15px;
+}
+
+.expertise-content p {
+    margin: 0;
+    padding-left: 28px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.skills-highlights strong {
+    font-weight: 600;
+    color: var(--text-color);
+    display: inline-block;
+}
+
+/* Add the number-icon class */
+.number-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.expertise-list li:hover .number-icon {
+    transform: scale(1.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.chart-wrapper canvas {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
 
 
