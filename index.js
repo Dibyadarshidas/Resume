@@ -753,3 +753,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Listen for scroll events
 window.addEventListener('scroll', animateOnScroll);
+
+// Initialize chatbot when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    // Create chatbot instance with provider from config.js
+    window.dibyChatbot = new DibyChatbot();
+});

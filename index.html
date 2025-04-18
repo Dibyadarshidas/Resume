@@ -1254,9 +1254,44 @@
       </button>
     </div>
 
+    <!-- CHATBOT -->
+    <div class="chatbot-container">
+      <div class="chatbot-header">
+        <div class="chatbot-title">
+          <i class="fas fa-robot"></i>
+          <h3>Diby</h3>
+        </div>
+        <button class="chatbot-close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="chatbot-body">
+        <div class="chatbot-messages">
+          <div class="chat-message bot">
+            <div class="message-content">
+              <p>Hi there! I'm Diby, your AI assistant. How can I help you today?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chatbot-footer">
+        <form id="chatbot-form">
+          <div class="chatbot-input">
+            <input type="text" id="user-message" placeholder="Type your message here..." autocomplete="off">
+            <button type="submit">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <!-- SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./index.js"></script>
+    <script src="./config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/openai@4.28.0/dist/browser.min.js"></script>
+    <script src="./chatbot.js"></script>
   </body>
 </html>
