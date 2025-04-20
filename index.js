@@ -754,8 +754,25 @@ document.addEventListener('DOMContentLoaded', function() {
 // Listen for scroll events
 window.addEventListener('scroll', animateOnScroll);
 
-// Initialize chatbot when DOM is loaded
+// Chatbot functionality
 document.addEventListener('DOMContentLoaded', () => {
+    // Toggle chatbot visibility when clicking the floating button
+    const chatbotToggleBtn = document.querySelector('.floating-cta-btn');
+    const chatbotContainer = document.querySelector('.chatbot-container');
+    const chatbotCloseBtn = document.querySelector('.chatbot-close');
+    
+    if (chatbotToggleBtn && chatbotContainer && chatbotCloseBtn) {
+        // Show chatbot when floating button is clicked
+        chatbotToggleBtn.addEventListener('click', () => {
+            chatbotContainer.classList.add('active');
+        });
+        
+        // Hide chatbot when close button is clicked
+        chatbotCloseBtn.addEventListener('click', () => {
+            chatbotContainer.classList.remove('active');
+        });
+    }
+    
     // Create chatbot instance with provider from config.js
     window.dibyChatbot = new DibyChatbot();
 });

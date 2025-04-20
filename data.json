@@ -1,0 +1,256 @@
+{
+  "siteInfo": {
+    "title": "Your Name - Portfolio",
+    "description": "Your professional portfolio showcasing skills, projects, and expertise"
+  },
+  "navigation": {
+    "logo": "Your Name",
+    "links": [
+      { "text": "Home", "url": "#home" },
+      { "text": "Skills", "url": "#skills" },
+      { "text": "Projects", "url": "#projects" },
+      { "text": "Mentorship", "url": "#mentorship" },
+      { "text": "Testimonials", "url": "#testimonials" },
+      { "text": "Contact", "url": "#contact" }
+    ]
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Your Name",
+    "title": "Full Stack Developer",
+    "subtitles": ["Web Developer", "UI/UX Designer", "Problem Solver"],
+    "description": "I create beautiful, functional, and responsive web applications with modern technologies and clean code.",
+    "cta": {
+      "primary": { "text": "View My Work", "url": "#projects" },
+      "secondary": { "text": "Contact Me", "url": "#contact" }
+    },
+    "social": [
+      { "icon": "fab fa-github", "url": "https://github.com/yourusername" },
+      { "icon": "fab fa-linkedin", "url": "https://linkedin.com/in/yourusername" },
+      { "icon": "fab fa-twitter", "url": "https://twitter.com/yourusername" }
+    ],
+    "image": "img/profile.jpg"
+  },
+  "skills": {
+    "title": "My Skills",
+    "description": "I've worked with a variety of technologies and frameworks to build modern web applications.",
+    "filters": [
+      { "name": "All", "filter": "all" },
+      { "name": "Frontend", "filter": "frontend" },
+      { "name": "Backend", "filter": "backend" },
+      { "name": "Design", "filter": "design" },
+      { "name": "Tools", "filter": "tools" }
+    ],
+    "items": [
+      {
+        "name": "JavaScript",
+        "category": "frontend",
+        "icon": "img/skills/javascript.svg",
+        "level": 90,
+        "tags": ["ES6+", "DOM", "Async"]
+      },
+      {
+        "name": "React",
+        "category": "frontend",
+        "icon": "img/skills/react.svg",
+        "level": 85,
+        "tags": ["Hooks", "Context", "Redux"]
+      },
+      {
+        "name": "Node.js",
+        "category": "backend",
+        "icon": "img/skills/nodejs.svg",
+        "level": 80,
+        "tags": ["Express", "REST API", "JWT"]
+      },
+      {
+        "name": "UI/UX Design",
+        "category": "design",
+        "icon": "img/skills/design.svg",
+        "level": 75,
+        "tags": ["Figma", "Adobe XD", "Prototyping"]
+      },
+      {
+        "name": "Git & CI/CD",
+        "category": "tools",
+        "icon": "img/skills/git.svg",
+        "level": 88,
+        "tags": ["GitHub", "GitLab", "Actions"]
+      }
+    ],
+    "chartData": {
+      "labels": ["Frontend", "Backend", "Design", "DevOps", "Integration", "Tools"],
+      "data": [90, 80, 75, 78, 85, 88]
+    }
+  },
+  "projects": {
+    "title": "My Projects",
+    "description": "Here are some of my recent projects. Each one was a unique challenge and learning experience.",
+    "filters": [
+      { "name": "All", "filter": "all" },
+      { "name": "Web Apps", "filter": "webapp" },
+      { "name": "Mobile", "filter": "mobile" },
+      { "name": "UI/UX", "filter": "design" }
+    ],
+    "items": [
+      {
+        "title": "E-Commerce Platform",
+        "description": "A full-featured e-commerce platform with user authentication, product management, cart functionality, and payment processing.",
+        "image": "img/projects/ecommerce.jpg",
+        "category": "webapp",
+        "techStack": ["React", "Node.js", "MongoDB", "Stripe"],
+        "links": [
+          { "text": "View Live", "url": "#", "icon": "fas fa-external-link-alt" },
+          { "text": "Source Code", "url": "#", "icon": "fab fa-github" }
+        ]
+      },
+      {
+        "title": "Task Management App",
+        "description": "A Kanban-style task management application with drag-and-drop functionality, user collaboration, and real-time updates.",
+        "image": "img/projects/taskapp.jpg",
+        "category": "webapp",
+        "techStack": ["React", "Firebase", "Tailwind CSS"],
+        "links": [
+          { "text": "View Live", "url": "#", "icon": "fas fa-external-link-alt" },
+          { "text": "Source Code", "url": "#", "icon": "fab fa-github" }
+        ]
+      },
+      {
+        "title": "Fitness Tracker",
+        "description": "A mobile app to track workouts, nutrition, and fitness progress with visual analytics and custom goal setting.",
+        "image": "img/projects/fitness.jpg",
+        "category": "mobile",
+        "techStack": ["React Native", "Redux", "Node.js", "MongoDB"],
+        "links": [
+          { "text": "View Demo", "url": "#", "icon": "fas fa-play" },
+          { "text": "Source Code", "url": "#", "icon": "fab fa-github" }
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What Clients Say",
+    "items": [
+      {
+        "content": "Working with this developer was a fantastic experience. They delivered our project on time, with excellent communication throughout the process.",
+        "author": "Jane Smith",
+        "position": "CEO, TechStartup Inc."
+      },
+      {
+        "content": "The attention to detail and technical expertise made all the difference in our application. We've seen a 40% increase in user engagement since launch.",
+        "author": "John Peterson",
+        "position": "Product Manager, InnovateCorp"
+      },
+      {
+        "content": "Not only did they build exactly what we needed, but they provided valuable insights that improved our original concept substantially.",
+        "author": "Sarah Johnson",
+        "position": "Marketing Director, GrowthBrand"
+      }
+    ]
+  },
+  "mentorship": {
+    "title": "Mentorship Programs",
+    "description": "I offer personalized mentorship programs to help you grow your development skills and advance your career.",
+    "programs": [
+      {
+        "title": "Career Starter",
+        "icon": "fas fa-rocket",
+        "description": "Perfect for beginners looking to break into tech with guided learning and project feedback.",
+        "features": [
+          "Weekly 1-hour sessions",
+          "Custom learning path",
+          "Code reviews",
+          "Portfolio guidance"
+        ],
+        "featured": false
+      },
+      {
+        "title": "Professional Growth",
+        "icon": "fas fa-chart-line",
+        "description": "Designed for working developers who want to level up their skills and tackle new challenges.",
+        "features": [
+          "Bi-weekly sessions",
+          "Advanced topics",
+          "Architecture reviews",
+          "Career advancement strategies"
+        ],
+        "featured": true
+      },
+      {
+        "title": "Project Accelerator",
+        "icon": "fas fa-lightbulb",
+        "description": "Focused support for developers working on a specific project or learning a new technology.",
+        "features": [
+          "On-demand sessions",
+          "Technical problem-solving",
+          "Best practices guidance",
+          "Code optimization"
+        ],
+        "featured": false
+      }
+    ],
+    "cta": {
+      "title": "Ready to accelerate your growth?",
+      "description": "Book a free consultation to discuss your goals and find the right mentorship program for you.",
+      "buttonText": "Book Consultation",
+      "buttonUrl": "#contact"
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "Have a project in mind or want to work together? I'd love to hear from you!",
+    "methods": [
+      {
+        "icon": "fas fa-envelope",
+        "title": "Email",
+        "content": "your.email@example.com",
+        "link": "mailto:your.email@example.com",
+        "featured": true
+      },
+      {
+        "icon": "fas fa-phone",
+        "title": "Phone",
+        "content": "+1 (555) 123-4567",
+        "link": "tel:+15551234567",
+        "featured": false
+      },
+      {
+        "icon": "fab fa-linkedin",
+        "title": "LinkedIn",
+        "content": "Connect with me",
+        "link": "https://linkedin.com/in/yourusername",
+        "featured": false
+      }
+    ],
+    "form": {
+      "name": { "label": "Your Name", "placeholder": "John Doe", "icon": "fas fa-user" },
+      "email": { "label": "Your Email", "placeholder": "john@example.com", "icon": "fas fa-envelope" },
+      "subject": { "label": "Subject", "placeholder": "Project Inquiry", "icon": "fas fa-tag" },
+      "message": { "label": "Message", "placeholder": "Tell me about your project...", "icon": "fas fa-comment" },
+      "button": { "text": "Send Message", "icon": "fas fa-paper-plane" }
+    }
+  },
+  "footer": {
+    "logo": "Your Name",
+    "tagline": "Creating digital experiences that make a difference",
+    "copyright": "© 2023 Your Name. All rights reserved.",
+    "social": [
+      { "icon": "fab fa-github", "url": "https://github.com/yourusername" },
+      { "icon": "fab fa-linkedin", "url": "https://linkedin.com/in/yourusername" },
+      { "icon": "fab fa-twitter", "url": "https://twitter.com/yourusername" },
+      { "icon": "fab fa-instagram", "url": "https://instagram.com/yourusername" }
+    ]
+  },
+  "newsletter": {
+    "title": "Stay Updated",
+    "description": "Subscribe to my newsletter for the latest projects, articles, and resources.",
+    "placeholder": "Your email address",
+    "buttonText": "Subscribe"
+  },
+  "offerBanner": {
+    "active": true,
+    "text": "🔥 Limited Time Offer: 25% off all mentorship programs for the next 7 days!",
+    "buttonText": "Claim Discount",
+    "discount": "25% Discount Mentorship Inquiry"
+  }
+} 
