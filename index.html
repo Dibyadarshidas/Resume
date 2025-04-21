@@ -4,6 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Dibyadarshi Das | Frontend Developer & AI Mentor</title>
+    <meta name="title" content="Dibyadarshi Das | Frontend Developer & AI Mentor">
+    <meta name="description" content="Expert frontend developer and AI mentor specializing in responsive web design, React, and AI-enhanced development. Hire me for your next project or mentorship.">
+    <meta name="keywords" content="frontend developer, web development, React developer, AI mentor, coding mentorship, Dibyadarshi Das">
+    <meta name="author" content="Dibyadarshi Das">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dibyadarshidas.com/">
+    <meta property="og:title" content="Dibyadarshi Das | Frontend Developer & AI Mentor">
+    <meta property="og:description" content="Expert frontend developer and AI mentor specializing in responsive web design, React, and AI-enhanced development.">
+    <meta property="og:image" content="./images/logo-vector.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dibyadarshidas.com/">
+    <meta property="twitter:title" content="Dibyadarshi Das | Frontend Developer & AI Mentor">
+    <meta property="twitter:description" content="Expert frontend developer and AI mentor specializing in responsive web design, React, and AI-enhanced development.">
+    <meta property="twitter:image" content="./images/logo-vector.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./images/favicon.ico" type="image/gif" sizes="16x16" />
+    <link rel="apple-touch-icon" href="./images/favicon.ico">
+    
+    <!-- Stylesheets -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -11,15 +39,50 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./index.css" />
-    <link
-      rel="icon"
-      href="./images/favicon.ico"
-      type="image/gif"
-      sizes="16x16"
-    />
-    <title>Didas</title>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dibyadarshidas.com/">
   </head>
   <body>
+    <!-- Schema.org structured data for Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Dibyadarshi Das",
+      "url": "https://dibyadarshidas.com",
+      "jobTitle": "Frontend Developer & AI Mentor",
+      "sameAs": [
+        "https://github.com/Dibyadarshidas",
+        "https://www.linkedin.com/in/dibyadas/",
+        "https://dribbble.com/Dibyadarshi"
+      ],
+      "image": "./images/logo-vector.png",
+      "description": "Frontend Developer and AI Mentor specializing in responsive web design, React, and AI-enhanced development.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Odisha",
+        "addressCountry": "India"
+      }
+    }
+    </script>
+    
+    <!-- Schema.org structured data for WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Dibyadarshi Das Portfolio",
+      "url": "https://dibyadarshidas.com",
+      "description": "Portfolio website of Dibyadarshi Das, Frontend Developer and AI Mentor.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://dibyadarshidas.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
     <!-- LIMITED TIME OFFER BANNER -->
     <div class="limited-offer-banner">
       <p>
@@ -37,33 +100,33 @@
     </div>
 
     <!-- NAVIGATION -->
-    <nav class="main-nav">
-      <div class="logo">Didas</div>
-      <div class="nav-right">
-        <!-- THEME TOGGLE moved into navigation -->
-        <div class="theme-toggle">
-          <i class="fas fa-moon" id="theme-icon"></i>
+    <header>
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="logo" aria-label="Site logo">Didas</div>
+        <div class="nav-right">
+          <!-- THEME TOGGLE moved into navigation -->
+          <div class="theme-toggle">
+            <i class="fas fa-moon" id="theme-icon" aria-label="Toggle dark mode"></i>
+          </div>
+          <button class="hamburger-menu" aria-label="Toggle menu" aria-expanded="false">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </button>
         </div>
-        <div class="hamburger-menu">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#mentorship">Mentorship</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="https://diby-chat.netlify.app/" target="_blank">Diby-Chat <span class="card-tag">Beta</span></a></li>
-        <li>
-          <a href="./Dibyadarshi Das Resume.pdf" target="_blank" class="nav-cta"
-            >Resume</a
-          >
-        </li>
-      </ul>
-    </nav>
+        <ul class="nav-links">
+          <li><a href="#home" aria-label="Go to home section">Home</a></li>
+          <li><a href="#skills" aria-label="Go to skills section">Skills</a></li>
+          <li><a href="#projects" aria-label="Go to projects section">Projects</a></li>
+          <li><a href="#mentorship" aria-label="Go to mentorship section">Mentorship</a></li>
+          <li><a href="#contact" aria-label="Go to contact section">Contact</a></li>
+          <li><a href="https://diby-chat.netlify.app/" target="_blank" rel="noopener" aria-label="Open Diby-Chat in a new tab">Diby-Chat <span class="card-tag">Beta</span></a></li>
+          <li>
+            <a href="./Dibyadarshi Das Resume.pdf" target="_blank" rel="noopener" class="nav-cta" aria-label="Open resume in a new tab">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <!-- HERO SECTION -->
     <section class="hero" id="home">
@@ -74,40 +137,44 @@
           <div class="hero-subtitle">Frontend Developer & AI Mentor</div>
           <p class="hero-description">
             I craft responsive websites, build interactive applications, and
-            mentor aspiring developers to navigate the modern tech landscape. Check out my new <a href="https://diby-chat.netlify.app/" target="_blank">AI Chat App <span class="card-tag">Beta</span></a> for an interactive experience!
+            mentor aspiring developers to navigate the modern tech landscape. Check out my new <a href="https://diby-chat.netlify.app/" target="_blank" rel="noopener" aria-label="Try my AI Chat App">AI Chat App <span class="card-tag">Beta</span></a> for an interactive experience!
           </p>
 
           <div class="hero-cta">
-            <a href="#projects" class="btn primary-btn">View Projects</a>
-            <a href="#mentorship" class="btn secondary-btn">My Mentorship</a>
+            <a href="#projects" class="btn primary-btn" aria-label="View my projects">View Projects</a>
+            <a href="#mentorship" class="btn secondary-btn" aria-label="Learn about my mentorship">My Mentorship</a>
           </div>
 
           <div class="hero-social">
             <a
               href="https://github.com/Dibyadarshidas"
               target="_blank"
-              aria-label="GitHub"
+              rel="noopener"
+              aria-label="Visit my GitHub profile"
             >
               <i class="fab fa-github"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/dibyadas/"
               target="_blank"
-              aria-label="LinkedIn"
+              rel="noopener"
+              aria-label="Connect with me on LinkedIn"
             >
               <i class="fab fa-linkedin-in"></i>
             </a>
             <a
               href="https://dribbble.com/Dibyadarshi"
               target="_blank"
-              aria-label="Dribbble"
+              rel="noopener"
+              aria-label="See my work on Dribbble"
             >
               <i class="fab fa-dribbble"></i>
             </a>
             <a
               href="./Dibyadarshi Das Resume.pdf"
               target="_blank"
-              aria-label="Resume"
+              rel="noopener"
+              aria-label="Download my resume"
             >
               <i class="fas fa-file-pdf"></i>
             </a>
@@ -116,7 +183,7 @@
 
         <div class="hero-image">
           <div class="hero-image-wrapper">
-            <img src="./images/logo-vector.png" alt="Dibyadarshi Das" />
+            <img src="./images/logo-vector.png" alt="Dibyadarshi Das - Professional portrait" width="300" height="300" />
           </div>
           <div class="hero-image-badge">
             <span>Available for </span>
@@ -130,7 +197,7 @@
       </div>
 
       <div class="scroll-down">
-        <a href="#skills">
+        <a href="#skills" aria-label="Scroll to Skills section">
           <span>Scroll Down</span>
           <i class="fas fa-chevron-down"></i>
         </a>
@@ -540,7 +607,7 @@
       <h2>Projects</h2>
     </div>
     <!-- PROJECTS -->
-    <div class="projects container center">
+    <section class="projects container center">
       <div class="project-filters">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="web">Web</button>
@@ -553,7 +620,7 @@
               <span class="card-tag">Featured</span>
               <span class="card-tag">New</span>
             </div>
-            <img src="./images/projects/diby-chat.png" alt="Diby AI Chat" />
+            <img src="./images/projects/diby-chat.png" alt="Diby AI Chat - AI-powered chat application interface" width="400" height="250" loading="lazy" />
             <div class="project-details">
               <h3>Diby AI Chat</h3>
               <p>An AI-powered chat application with TinyLlama integration</p>
@@ -563,8 +630,8 @@
                 <span>OpenAI</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/Dibyadarshidas/diby-chat" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://diby-chat.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/Dibyadarshidas/diby-chat" target="_blank" rel="noopener" aria-label="View Diby AI Chat source code on GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://diby-chat.netlify.app/" target="_blank" rel="noopener" aria-label="Visit the Diby AI Chat live site"><i class="fas fa-external-link-alt"></i></a>
               </div>
             </div>
           </div>
@@ -574,7 +641,7 @@
             <div class="card-banner">
               <span class="card-tag">Featured</span>
             </div>
-            <img src="./images/projects/picky.png" alt="Picky Website" />
+            <img src="./images/projects/picky.png" alt="Picky - Stock Image Search Engine with modern interface" width="400" height="250" loading="lazy" />
             <div class="project-details">
               <h3>Picky</h3>
               <p>A Stock Image Search Engine</p>
@@ -584,17 +651,15 @@
                 <span>MongoDB</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/Dibyadarshidas/Picky" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://nostalgic-perlman-0afe9c.netlify.app/" target="_blank"
-                  ><i class="fas fa-external-link-alt"></i
-                ></a>
+                <a href="https://github.com/Dibyadarshidas/Picky" target="_blank" rel="noopener" aria-label="View Picky source code on GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://nostalgic-perlman-0afe9c.netlify.app/" target="_blank" rel="noopener" aria-label="Visit the Picky live site"><i class="fas fa-external-link-alt"></i></a>
               </div>
             </div>
           </div>
         </div>
         <div class="project-card" data-category="app">
           <div class="card">
-            <img src="./images/projects/keeper.png" alt="Keeper App" />
+            <img src="./images/projects/keeper.png" alt="Keeper App - Note-taking application with card layout" width="400" height="250" loading="lazy" />
             <div class="project-details">
               <h3>Keeper</h3>
               <p>A note-taking app built with React</p>
@@ -603,10 +668,8 @@
                 <span>CSS</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/Dibyadarshidas/Note-App" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://clever-wiles-5f6e7f.netlify.app/" target="_blank"
-                  ><i class="fas fa-external-link-alt"></i
-                ></a>
+                <a href="https://github.com/Dibyadarshidas/Note-App" target="_blank" rel="noopener" aria-label="View Keeper App source code on GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://clever-wiles-5f6e7f.netlify.app/" target="_blank" rel="noopener" aria-label="Visit the Keeper App live site"><i class="fas fa-external-link-alt"></i></a>
               </div>
             </div>
           </div>
@@ -615,7 +678,10 @@
           <div class="card">
             <img
               src="./images/projects/creativemantra.png"
-              alt="Creative Mantra"
+              alt="Creative Mantra - Design agency website with modern aesthetics"
+              width="400" 
+              height="250"
+              loading="lazy"
             />
             <div class="project-details">
               <h3>Creative Mantra</h3>
@@ -626,10 +692,8 @@
                 <span>JavaScript</span>
               </div>
               <div class="project-links">
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"
-                  ><i class="fas fa-external-link-alt"></i
-                ></a>
+                <a href="#" target="_blank" rel="noopener" aria-label="View Creative Mantra source code on GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" rel="noopener" aria-label="Visit the Creative Mantra live site"><i class="fas fa-external-link-alt"></i></a>
               </div>
             </div>
           </div>
@@ -639,7 +703,7 @@
             <div class="card-banner">
               <span class="card-tag">New</span>
             </div>
-            <img src="./images/projects/noraa.png" alt="Noraa App" />
+            <img src="./images/projects/noraa.png" alt="Noraa - Voice assistant application with speech recognition interface" width="400" height="250" loading="lazy" />
             <div class="project-details">
               <h3>Noraa</h3>
               <p>Voice assistant application for daily tasks</p>
@@ -649,17 +713,15 @@
                 <span>Speech API</span>
               </div>
               <div class="project-links">
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"
-                  ><i class="fas fa-external-link-alt"></i
-                ></a>
+                <a href="#" target="_blank" rel="noopener" aria-label="View Noraa source code on GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" rel="noopener" aria-label="Visit the Noraa live site"><i class="fas fa-external-link-alt"></i></a>
               </div>
             </div>
           </div>
         </div>
         <div class="project-card" data-category="web">
           <div class="card">
-            <img src="./images/projects/tindog.png" alt="Tindog" />
+            <img src="./images/projects/tindog.png" alt="Tindog - Dating app for dog owners with playful design" width="400" height="250" loading="lazy" />
             <div class="project-details">
               <h3>Tindog</h3>
               <p>A tinder clone for dog owners to find matches</p>
@@ -669,17 +731,15 @@
                 <span>Bootstrap</span>
               </div>
               <div class="project-links">
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"
-                  ><i class="fas fa-external-link-alt"></i
-                ></a>
+                <a href="#" target="_blank" rel="noopener" aria-label="View Tindog source code on GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" rel="noopener" aria-label="Visit the Tindog live site"><i class="fas fa-external-link-alt"></i></a>
               </div>
             </div>
           </div>
         </div>
         <div class="project-card" data-category="web">
           <div class="card">
-            <img src="./images/projects/chakhhna.png" alt="Chakhhna" />
+            <img src="./images/projects/chakhhna.png" alt="Chakhhna - Restaurant website with food ordering system" width="400" height="250" loading="lazy" />
             <div class="project-details">
               <h3>Chakhhna</h3>
               <p>Restaurant website with menu and ordering system</p>
@@ -689,16 +749,63 @@
                 <span>MongoDB</span>
               </div>
               <div class="project-links">
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"
-                  ><i class="fas fa-external-link-alt"></i
-                ></a>
+                <a href="#" target="_blank" rel="noopener" aria-label="View Chakhhna source code on GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" rel="noopener" aria-label="Visit the Chakhhna live site"><i class="fas fa-external-link-alt"></i></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Structured data for software projects -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "SoftwareApplication",
+          "position": 1,
+          "name": "Diby AI Chat",
+          "applicationCategory": "WebApplication",
+          "operatingSystem": "Any",
+          "description": "An AI-powered chat application with TinyLlama integration",
+          "url": "https://diby-chat.netlify.app/",
+          "author": {
+            "@type": "Person",
+            "name": "Dibyadarshi Das"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "position": 2,
+          "name": "Picky",
+          "applicationCategory": "WebApplication",
+          "operatingSystem": "Any",
+          "description": "A Stock Image Search Engine",
+          "url": "https://nostalgic-perlman-0afe9c.netlify.app/",
+          "author": {
+            "@type": "Person",
+            "name": "Dibyadarshi Das"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "position": 3,
+          "name": "Keeper",
+          "applicationCategory": "WebApplication",
+          "operatingSystem": "Any",
+          "description": "A note-taking app built with React",
+          "url": "https://clever-wiles-5f6e7f.netlify.app/",
+          "author": {
+            "@type": "Person",
+            "name": "Dibyadarshi Das"
+          }
+        }
+      ]
+    }
+    </script>
 
     <!-- MENTORSHIP SECTION -->
     <div class="divider" id="mentorship">
@@ -716,9 +823,9 @@
       </div>
 
       <div class="mentorship-grid">
-        <div class="mentorship-card">
+        <div class="mentorship-card" id="frontend-mentorship">
           <div class="mentorship-icon">
-            <i class="fas fa-laptop-code"></i>
+            <i class="fas fa-laptop-code" aria-hidden="true"></i>
           </div>
           <h3>Frontend Development Mastery</h3>
           <p>
@@ -727,28 +834,28 @@
           </p>
           <ul class="mentorship-features">
             <li>
-              <i class="fas fa-check-circle"></i> HTML5, CSS3 & JavaScript
+              <i class="fas fa-check-circle" aria-hidden="true"></i> HTML5, CSS3 & JavaScript
               fundamentals
             </li>
             <li>
-              <i class="fas fa-check-circle"></i> React, Vue, and Next.js
+              <i class="fas fa-check-circle" aria-hidden="true"></i> React, Vue, and Next.js
               frameworks
             </li>
             <li>
-              <i class="fas fa-check-circle"></i> Responsive design &
+              <i class="fas fa-check-circle" aria-hidden="true"></i> Responsive design &
               accessibility
             </li>
             <li>
-              <i class="fas fa-check-circle"></i> Performance optimization
+              <i class="fas fa-check-circle" aria-hidden="true"></i> Performance optimization
               techniques
             </li>
           </ul>
         </div>
 
-        <div class="mentorship-card featured">
+        <div class="mentorship-card featured" id="ai-mentorship">
           <div class="ribbon">Most Popular</div>
           <div class="mentorship-icon">
-            <i class="fas fa-robot"></i>
+            <i class="fas fa-robot" aria-hidden="true"></i>
           </div>
           <h3>AI-Enhanced Development</h3>
           <p>
@@ -757,19 +864,19 @@
           </p>
           <ul class="mentorship-features">
             <li>
-              <i class="fas fa-check-circle"></i> Effective prompt engineering
+              <i class="fas fa-check-circle" aria-hidden="true"></i> Effective prompt engineering
             </li>
-            <li><i class="fas fa-check-circle"></i> GitHub Copilot mastery</li>
-            <li><i class="fas fa-check-circle"></i> AI-powered code reviews</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> GitHub Copilot mastery</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> AI-powered code reviews</li>
             <li>
-              <i class="fas fa-check-circle"></i> Workflow automation with AI
+              <i class="fas fa-check-circle" aria-hidden="true"></i> Workflow automation with AI
             </li>
           </ul>
         </div>
 
-        <div class="mentorship-card">
+        <div class="mentorship-card" id="career-mentorship">
           <div class="mentorship-icon">
-            <i class="fas fa-briefcase"></i>
+            <i class="fas fa-briefcase" aria-hidden="true"></i>
           </div>
           <h3>Career Acceleration</h3>
           <p>
@@ -777,17 +884,93 @@
             prepares you for the job market and beyond.
           </p>
           <ul class="mentorship-features">
-            <li><i class="fas fa-check-circle"></i> Portfolio development</li>
-            <li><i class="fas fa-check-circle"></i> Interview preparation</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Portfolio development</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Interview preparation</li>
             <li>
-              <i class="fas fa-check-circle"></i> Resume & LinkedIn optimization
+              <i class="fas fa-check-circle" aria-hidden="true"></i> Resume & LinkedIn optimization
             </li>
             <li>
-              <i class="fas fa-check-circle"></i> Salary negotiation tactics
+              <i class="fas fa-check-circle" aria-hidden="true"></i> Salary negotiation tactics
             </li>
           </ul>
         </div>
       </div>
+
+      <!-- Course Structured Data -->
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "Course",
+            "position": 1,
+            "name": "Frontend Development Mastery",
+            "description": "Master modern frontend technologies with a comprehensive curriculum that takes you from fundamentals to advanced concepts.",
+            "provider": {
+              "@type": "Person",
+              "name": "Dibyadarshi Das"
+            },
+            "hasCourseInstance": {
+              "@type": "CourseInstance",
+              "courseMode": "online",
+              "courseWorkload": "P10H",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "price": "199.99",
+                "priceCurrency": "USD",
+                "url": "#frontend-mentorship"
+              }
+            }
+          },
+          {
+            "@type": "Course",
+            "position": 2,
+            "name": "AI-Enhanced Development",
+            "description": "Learn to leverage cutting-edge AI tools to dramatically improve your productivity and stand out in the job market.",
+            "provider": {
+              "@type": "Person",
+              "name": "Dibyadarshi Das"
+            },
+            "hasCourseInstance": {
+              "@type": "CourseInstance",
+              "courseMode": "online",
+              "courseWorkload": "P8H",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "price": "249.99",
+                "priceCurrency": "USD",
+                "url": "#ai-mentorship"
+              }
+            }
+          },
+          {
+            "@type": "Course",
+            "position": 3,
+            "name": "Career Acceleration",
+            "description": "Transform your career prospects with a comprehensive program that prepares you for the job market and beyond.",
+            "provider": {
+              "@type": "Person",
+              "name": "Dibyadarshi Das"
+            },
+            "hasCourseInstance": {
+              "@type": "CourseInstance",
+              "courseMode": "online",
+              "courseWorkload": "P6H",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "price": "179.99",
+                "priceCurrency": "USD",
+                "url": "#career-mentorship"
+              }
+            }
+          }
+        ]
+      }
+      </script>
 
       <div class="roadmap-container">
         <div class="roadmap-header">
@@ -1053,7 +1236,7 @@
     <div class="divider" id="contact">
       <h2>Get In Touch</h2>
     </div>
-    <section class="contact">
+    <section class="contact" itemscope itemtype="https://schema.org/ContactPage">
       <div class="contact-container">
         <div class="contact-header">
           <span class="contact-accent">Let's Connect</span>
@@ -1065,43 +1248,48 @@
         </div>
 
         <div class="contact-cards">
-          <div class="contact-card">
+          <div class="contact-card" itemprop="contactPoint" itemscope itemtype="https://schema.org/ContactPoint">
             <div class="contact-card-icon">
-              <i class="fas fa-envelope"></i>
+              <i class="fas fa-envelope" aria-hidden="true"></i>
             </div>
             <h4>Email Me</h4>
-            <p>ddas270@gmail.com</p>
-            <a href="mailto:ddas270@gmail.com" class="contact-link">
+            <p itemprop="email">ddas270@gmail.com</p>
+            <a href="mailto:ddas270@gmail.com" class="contact-link" itemprop="url">
               <span>Send Email</span>
-              <i class="fas fa-arrow-right"></i>
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
             </a>
           </div>
 
-          <div class="contact-card featured-card">
+          <div class="contact-card featured-card" itemprop="contactPoint" itemscope itemtype="https://schema.org/ContactPoint">
             <div class="contact-card-icon">
-              <i class="fas fa-phone"></i>
+              <i class="fas fa-phone" aria-hidden="true"></i>
             </div>
             <h4>Call Me</h4>
-            <p>+91 7008347451</p>
-            <a href="tel:+917008347451" class="contact-link">
+            <p itemprop="telephone">+91 7008347451</p>
+            <a href="tel:+917008347451" class="contact-link" itemprop="url">
               <span>Call Now</span>
-              <i class="fas fa-arrow-right"></i>
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
             </a>
           </div>
 
-          <div class="contact-card">
+          <div class="contact-card" itemprop="location" itemscope itemtype="https://schema.org/Place">
             <div class="contact-card-icon">
-              <i class="fas fa-map-marker-alt"></i>
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
             </div>
             <h4>Location</h4>
-            <p>Odisha, India</p>
+            <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+              <span itemprop="addressRegion">Odisha</span>, 
+              <span itemprop="addressCountry">India</span>
+            </p>
             <a
               href="https://maps.google.com?q=Odisha,India"
               target="_blank"
+              rel="noopener"
               class="contact-link"
+              itemprop="hasMap"
             >
               <span>View on Map</span>
-              <i class="fas fa-arrow-right"></i>
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
             </a>
           </div>
         </div>
@@ -1113,31 +1301,33 @@
               <p>I'll get back to you as soon as possible</p>
             </div>
 
-            <form id="contactForm" class="contact-form">
+            <form id="contactForm" class="contact-form" itemscope itemtype="https://schema.org/ContactForm">
               <div class="form-row">
                 <div class="form-group">
                   <label for="name">Your Name</label>
                   <div class="input-with-icon">
-                    <i class="fas fa-user"></i>
+                    <i class="fas fa-user" aria-hidden="true"></i>
                     <input
                       type="text"
                       id="name"
                       name="name"
                       placeholder="John Doe"
                       required
+                      aria-required="true"
                     />
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="email">Your Email</label>
                   <div class="input-with-icon">
-                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
                     <input
                       type="email"
                       id="email"
                       name="email"
                       placeholder="john@example.com"
                       required
+                      aria-required="true"
                     />
                   </div>
                 </div>
@@ -1145,45 +1335,47 @@
               <div class="form-group">
                 <label for="subject">Subject</label>
                 <div class="input-with-icon">
-                  <i class="fas fa-pencil-alt"></i>
+                  <i class="fas fa-pencil-alt" aria-hidden="true"></i>
                   <input
                     type="text"
                     id="subject"
                     name="subject"
                     placeholder="How can I help you?"
                     required
+                    aria-required="true"
                   />
                 </div>
               </div>
               <div class="form-group">
                 <label for="message">Message</label>
                 <div class="input-with-icon textarea-icon">
-                  <i class="fas fa-comment-alt"></i>
+                  <i class="fas fa-comment-alt" aria-hidden="true"></i>
                   <textarea
                     id="message"
                     name="message"
                     rows="5"
                     placeholder="Tell me about your project or inquiry..."
                     required
+                    aria-required="true"
                   ></textarea>
                 </div>
               </div>
               <div class="form-submit">
                 <button type="submit" class="primary-btn">
                   <span>Send Message</span>
-                  <i class="fas fa-paper-plane"></i>
+                  <i class="fas fa-paper-plane" aria-hidden="true"></i>
                 </button>
               </div>
 
-              <div class="form-success">
-                <i class="fas fa-check-circle"></i>
+              <div class="form-success" aria-live="polite" aria-hidden="true">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
                 <h4>Message Sent!</h4>
                 <p>Thank you for reaching out. I'll get back to you soon.</p>
               </div>
             </form>
           </div>
 
-          <div class="contact-decoration">
+          <div class="contact-decoration" aria-hidden="true">
             <div class="decoration-circle"></div>
             <div class="decoration-dots"></div>
           </div>
@@ -1195,34 +1387,38 @@
             <a
               href="https://github.com/Dibyadarshidas"
               target="_blank"
+              rel="noopener"
               aria-label="GitHub"
               class="social-btn"
             >
-              <i class="fab fa-github"></i>
+              <i class="fab fa-github" aria-hidden="true"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/dibyadas/"
               target="_blank"
+              rel="noopener"
               aria-label="LinkedIn"
               class="social-btn"
             >
-              <i class="fab fa-linkedin-in"></i>
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
             </a>
             <a
               href="https://dribbble.com/Dibyadarshi"
               target="_blank"
+              rel="noopener"
               aria-label="Dribbble"
               class="social-btn"
             >
-              <i class="fab fa-dribbble"></i>
+              <i class="fab fa-dribbble" aria-hidden="true"></i>
             </a>
             <a
               href="https://wa.me/+917008347451"
               target="_blank"
+              rel="noopener"
               aria-label="WhatsApp"
               class="social-btn"
             >
-              <i class="fab fa-whatsapp"></i>
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
             </a>
           </div>
         </div>
@@ -1230,35 +1426,55 @@
     </section>
 
     <!-- FOOTER -->
-    <footer>
+    <footer itemscope itemtype="https://schema.org/WPFooter">
+      <div class="footer-content">
+        <h2 class="footer-logo">Didas</h2>
+        <p>Frontend Developer & AI Mentor passionate about creating responsive websites and guiding aspiring developers.</p>
+        
+        <div class="cta">
+          <a href="#contact" class="primary-btn white"><i class="fas fa-envelope"></i> Contact Me</a>
+          <a href="./Dibyadarshi Das Resume.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> Download Resume</a>
+        </div>
+      </div>
+      
       <div class="footer-bottom">
         <div class="back-to-top">
-          <a href="#" id="top-button"><i class="fas fa-arrow-up"></i></a>
+          <a href="#" id="top-button" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
         </div>
-        <p>Made with ❤ by Dibyadarshi Das</p>
-        <p class="copyright">© 2023 All Rights Reserved</p>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#mentorship">Mentorship</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="sitemap.xml">Sitemap</a></li>
+          </ul>
+        </nav>
+        <p>Made with <span aria-label="love">❤</span> by Dibyadarshi Das</p>
+        <p class="copyright">© <span id="current-year">2023</span> All Rights Reserved</p>
       </div>
     </footer>
 
     <!-- Newsletter Popup -->
-    <div id="newsletter-popup" class="newsletter-overlay">
+    <div id="newsletter-popup" class="newsletter-overlay" aria-hidden="true" role="dialog" aria-labelledby="newsletter-title">
       <div class="newsletter-container">
         <button class="newsletter-close" aria-label="Close popup">
           &times;
         </button>
         <div class="newsletter-content">
-          <h3>Join My Developer Newsletter</h3>
+          <h3 id="newsletter-title">Join My Developer Newsletter</h3>
           <p>
             Get weekly insights on frontend development, AI tools, and career
             growth tips directly to your inbox.
           </p>
           <form class="newsletter-form">
-            <input type="text" placeholder="Your name" required />
-            <input type="email" placeholder="Your email address" required />
+            <input type="text" placeholder="Your name" required aria-required="true" />
+            <input type="email" placeholder="Your email address" required aria-required="true" />
             <button type="submit" class="newsletter-button">Subscribe</button>
           </form>
-          <div class="newsletter-success">
-            <svg viewBox="0 0 24 24" width="32" height="32">
+          <div class="newsletter-success" aria-live="polite" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true">
               <path
                 fill="currentColor"
                 d="M9,16.17L4.83,12l-1.42,1.41L9,19 21,7l-1.41-1.41L9,16.17z"
@@ -1273,28 +1489,28 @@
 
     <!-- FLOATING CTA -->
     <div class="floating-cta">
-      <button class="floating-cta-btn">
-        <i class="fas fa-comment-alt"></i>
+      <button class="floating-cta-btn" aria-label="Open chat">
+        <i class="fas fa-comment-alt" aria-hidden="true"></i>
         <span>Let's Chat</span>
       </button>
     </div>
 
     <!-- CHATBOT -->
-    <div class="chatbot-container">
+    <div class="chatbot-container" aria-hidden="true" role="dialog" aria-labelledby="chatbot-title">
       <div class="chatbot-header">
         <div class="chatbot-title">
-          <i class="fas fa-robot"></i>
-          <h3>Diby</h3>
+          <i class="fas fa-robot" aria-hidden="true"></i>
+          <h3 id="chatbot-title">Diby</h3>
         </div>
-        <button class="chatbot-close">
-          <i class="fas fa-times"></i>
+        <button class="chatbot-close" aria-label="Close chat">
+          <i class="fas fa-times" aria-hidden="true"></i>
         </button>
       </div>
       <div class="chatbot-body">
-        <div class="chatbot-messages">
+        <div class="chatbot-messages" aria-live="polite">
           <div class="chat-message bot">
             <div class="message-content">
-              <p>Hi there! I'm Diby, your AI assistant. How can I help you today? Check out my new AI Chat App - <a href="https://diby-chat.netlify.app/" target="_blank" class="chat-link">click here <span class="card-tag">Beta</span></a> for a more immersive experience!</p>
+              <p>Hi there! I'm Diby, your AI assistant. How can I help you today? Check out my new AI Chat App - <a href="https://diby-chat.netlify.app/" target="_blank" rel="noopener" class="chat-link">click here <span class="card-tag">Beta</span></a> for a more immersive experience!</p>
             </div>
           </div>
         </div>
@@ -1302,9 +1518,10 @@
       <div class="chatbot-footer">
         <form id="chatbot-form">
           <div class="chatbot-input">
+            <label for="user-message" class="sr-only">Type your message</label>
             <input type="text" id="user-message" placeholder="Type your message here..." autocomplete="off">
-            <button type="submit">
-              <i class="fas fa-paper-plane"></i>
+            <button type="submit" aria-label="Send message">
+              <i class="fas fa-paper-plane" aria-hidden="true"></i>
             </button>
           </div>
         </form>
@@ -1312,11 +1529,16 @@
     </div>
 
     <!-- SCRIPTS -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="./index.js"></script>
-    <script src="./config.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/openai@4.28.0/dist/browser.min.js"></script>
-    <script src="./chatbot.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="./index.js" defer></script>
+    <script src="./config.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/openai@4.28.0/dist/browser.min.js" defer></script>
+    <script src="./chatbot.js" defer></script>
+    
+    <!-- Update copyright year -->
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
