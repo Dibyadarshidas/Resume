@@ -258,6 +258,11 @@ body{
 .hamburger-menu {
     display: none;
     cursor: pointer;
+    z-index: 1010; /* Higher z-index to stay above the nav overlay */
+    background: transparent;
+    border: none;
+    padding: 8px;
+    transition: var(--transition);
 }
 
 .bar {
@@ -267,6 +272,85 @@ body{
     margin: 5px 0;
     transition: var(--transition);
     border-radius: 3px;
+}
+
+.light-theme .bar {
+    background: #333; /* Darker color for light theme */
+}
+
+/* Remove the hiding of hamburger menu */
+/* Instead, we'll transform it to an X when active */
+
+/* Mobile navigation styles */
+@media (max-width: 768px) {
+    .main-nav {
+        padding: 15px 20px;
+        background: rgba(36, 36, 36, 0.95);
+        justify-content: space-between;
+    }
+    
+    .nav-right {
+        display: flex;
+        align-items: center;
+    }
+    
+    .theme-toggle {
+        margin-right: 15px;
+        margin-left: 0;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background: var(--background-color);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.5s ease;
+        box-shadow: -5px 0 10px rgba(0,0,0,0.1);
+        padding: 50px 0;
+        z-index: 1005;
+    }
+    
+    .nav-links li {
+        margin: 15px 0;
+    }
+    
+    .nav-active {
+        right: 0;
+    }
+    
+    .hamburger-menu {
+        display: block;
+    }
+    
+    /* Transform hamburger to X */
+    .hamburger-active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+        background: var(--primary-color);
+    }
+    
+    .hamburger-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger-active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+        background: var(--primary-color);
+    }
+}
+
+/* Light theme adjustments for mobile */
+.light-theme .main-nav {
+    background: rgba(245, 245, 245, 0.95);
+}
+
+.light-theme .hamburger-active .bar:nth-child(1),
+.light-theme .hamburger-active .bar:nth-child(3) {
+    background: var(--primary-color);
 }
 
 /* MODERN HERO SECTION */
@@ -1973,7 +2057,7 @@ footer{
         transition: right 0.5s ease;
         box-shadow: -5px 0 10px rgba(0,0,0,0.1);
         padding: 50px 0;
-        z-index: 999;
+        z-index: 1005;
     }
     
     .nav-links li {
@@ -1986,35 +2070,12 @@ footer{
     
     .hamburger-menu {
         display: block;
-        z-index: 1001;
     }
     
-    .nav-links {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 80%;
-        height: 100vh;
-        background: var(--background-color);
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: 0.5s;
-        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
-        padding: 50px 0;
-        z-index: 999;
-    }
-    
-    .nav-active {
-        right: 0;
-    }
-    
-    .nav-links li {
-        margin: 15px 0;
-    }
-    
+    /* Transform hamburger to X */
     .hamburger-active .bar:nth-child(1) {
         transform: rotate(-45deg) translate(-5px, 6px);
+        background: var(--primary-color);
     }
     
     .hamburger-active .bar:nth-child(2) {
@@ -2023,9 +2084,22 @@ footer{
     
     .hamburger-active .bar:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
+        background: var(--primary-color);
     }
-    
-    /* Fix for hero section on mobile */
+}
+
+/* Light theme adjustments for mobile */
+.light-theme .main-nav {
+    background: rgba(245, 245, 245, 0.95);
+}
+
+.light-theme .hamburger-active .bar:nth-child(1),
+.light-theme .hamburger-active .bar:nth-child(3) {
+    background: var(--primary-color);
+}
+
+/* Fix for hero section on mobile */
+@media (max-width: 768px) {
     .hero {
         height: auto; /* Allow hero to expand based on content */
         min-height: 100vh;
@@ -2040,9 +2114,99 @@ footer{
         padding-bottom: 50px; /* Add space for scroll down button */
     }
     
+    .hero-content {
+        margin: 0 auto;
+        order: 1;
+    }
+    
+    .hero-image {
+        order: 0;
+    }
+    
+    .hero-subtitle::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-cta {
+        justify-content: center;
+    }
+    
     .hero-social {
         justify-content: center;
         margin-bottom: 70px; /* Increase bottom margin for social links */
+    }
+    
+    .hero-image-badge {
+        position: static;
+        margin: 15px auto 0;
+        display: inline-block;
+        opacity: 1;
+        animation: none;
+        z-index: 2;
+    }
+    
+    .hero-image {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    /* Mobile navigation improvements */
+    .nav-links {
+        background: rgba(36, 36, 36, 0.95);
+        z-index: 1000;
+    }
+    
+    .light-theme .nav-links {
+        background: rgba(245, 245, 245, 0.95);
+    }
+    
+    .main-nav {
+        padding: 15px 20px;
+        background: rgba(36, 36, 36, 0.95);
+        justify-content: space-between;
+    }
+    
+    /* Improved responsive grids */
+    .mentorship-grid, 
+    .card-grid,
+    .project-grid,
+    .mentee-grid,
+    .contact-container {
+        display: grid;
+        gap: 20px;
+    }
+    
+    .mentorship-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .mentorship-card.featured {
+        transform: scale(1);
+    }
+    
+    .mentorship-card.featured:hover {
+        transform: translateY(-15px);
+    }
+    
+    .hero-image-wrapper {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
     }
     
     .scroll-down {
