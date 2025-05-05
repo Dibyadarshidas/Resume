@@ -192,10 +192,34 @@ body{
 }
 
 .logo {
+    font-family: var(--accent-font);
     font-size: 28px;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--text-color);
     margin-right: auto;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 2px;
+    transition: color 0.3s ease;
+}
+
+.logo::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.logo:hover {
+    color: var(--primary-color);
+}
+
+.logo:hover::after {
+    width: 100%;
 }
 
 /* Keep nav items together with theme toggle for desktop */
@@ -475,7 +499,7 @@ body{
 .hero-image-wrapper {
     width: 320px;
     height: 320px;
-    margin-bottom: 35px; /* Consistent space between logo and badge */
+    margin-bottom: 35px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 50%;
@@ -489,39 +513,32 @@ body{
     z-index: 10;
 }
 
-.hero-image-wrapper::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: conic-gradient(
-        transparent, 
-        transparent, 
-        transparent, 
-        white
-    );
-    animation: rotate 4s linear infinite;
-    z-index: 1; /* Below content */
-}
-
-.hero-image-wrapper::after {
-    content: "";
-    position: absolute;
-    inset: 4px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border-radius: 50%;
-}
-
 .hero-image-wrapper img {
-    width: 80%;
-    height: auto;
-    position: relative;
-    z-index: 1;
-    object-fit: contain; /* Ensure image maintains aspect ratio */
-    max-width: 100%; /* Ensure image doesn't overflow */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.hero-image-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+.hero-image-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(135deg, var(--primary-color), transparent 60%);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.6;
+    animation: rotate 6s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 .hero-image-badge {
@@ -1827,9 +1844,12 @@ footer{
 
 .footer-logo {
     font-family: var(--accent-font);
-    font-size: 2.5rem;
+    font-size: 42px;
+    font-weight: 600;
     color: var(--primary-color);
     margin-bottom: 1rem;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
 .footer-content p {
@@ -3711,15 +3731,15 @@ html, body {
     }
 }
 
-/* Why Choose Me Section */
-.why-choose-me {
+/* Why Choose Me Section - renamed to What I Do */
+.what-i-do {
     padding: 80px 0;
     background: linear-gradient(to bottom, rgba(var(--bg-rgb), 0.03), rgba(var(--bg-rgb), 0.01));
     border-top: 1px solid rgba(var(--text-rgb), 0.05);
     border-bottom: 1px solid rgba(var(--text-rgb), 0.05);
 }
 
-.why-choose-me h2 {
+.what-i-do h2 {
     text-align: center;
     margin-bottom: 15px;
     color: var(--text-color);
@@ -3727,7 +3747,7 @@ html, body {
     font-weight: 700;
 }
 
-.why-choose-me .subtitle {
+.what-i-do .subtitle {
     text-align: center;
     color: var(--text-color-light);
     margin-bottom: 50px;
@@ -3737,14 +3757,14 @@ html, body {
     margin-right: auto;
 }
 
-.benefits-grid {
+.services-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     margin-top: 30px;
 }
 
-.benefit-card {
+.service-card {
     background: var(--card-bg);
     border-radius: 12px;
     padding: 30px;
@@ -3757,7 +3777,7 @@ html, body {
     border: 1px solid rgba(var(--text-rgb), 0.05);
 }
 
-.benefit-card::before {
+.service-card::before {
     content: "";
     position: absolute;
     top: 0;
@@ -3769,17 +3789,17 @@ html, body {
     transition: all 0.3s ease;
 }
 
-.benefit-card:hover {
+.service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
-.benefit-card:hover::before {
+.service-card:hover::before {
     height: 100%;
     opacity: 0.05;
 }
 
-.benefit-icon {
+.service-icon {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -3790,26 +3810,26 @@ html, body {
     margin-bottom: 20px;
 }
 
-.benefit-icon i {
+.service-icon i {
     font-size: 24px;
     color: var(--primary-color);
 }
 
-.benefit-card h3 {
+.service-card h3 {
     margin-bottom: 15px;
     font-size: 20px;
     color: var(--text-color);
     font-weight: 600;
 }
 
-.benefit-card p {
+.service-card p {
     color: var(--text-color-light);
     line-height: 1.6;
     margin-bottom: 15px;
     font-size: 15px;
 }
 
-.benefit-card .stat {
+.service-card .tech {
     font-weight: bold;
     color: var(--primary-color);
     font-size: 16px;
@@ -3820,66 +3840,48 @@ html, body {
     margin-top: 10px;
 }
 
-/* Responsive styling for Why Choose Me section */
+/* Responsive styling for What I Do section */
 @media (max-width: 992px) {
-    .benefits-grid {
+    .services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
-    .why-choose-me {
+    .what-i-do {
         padding: 60px 0;
     }
     
-    .why-choose-me h2 {
+    .what-i-do h2 {
         font-size: 28px;
     }
     
-    .why-choose-me .subtitle {
+    .what-i-do .subtitle {
         font-size: 16px;
         margin-bottom: 30px;
     }
     
-    .benefits-grid {
+    .services-grid {
         gap: 20px;
     }
     
-    .benefit-card {
+    .service-card {
         padding: 25px;
     }
     
-    .benefit-icon {
+    .service-icon {
         width: 50px;
         height: 50px;
     }
     
-    .benefit-icon i {
+    .service-icon i {
         font-size: 20px;
     }
 }
 
 @media (max-width: 576px) {
-    .benefits-grid {
+    .services-grid {
         grid-template-columns: 1fr;
-    }
-    
-    .newsletter-container {
-        padding: 30px 20px;
-    }
-    
-    .newsletter-form {
-        flex-direction: column;
-    }
-    
-    .newsletter-form input {
-        border-radius: 5px;
-        margin-bottom: 10px;
-    }
-    
-    .newsletter-form button {
-        border-radius: 5px;
-        width: 100%;
     }
 }
 

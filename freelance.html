@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Didas | React & Next.js with AI SEO & n8n Workflow Automation | Freelance Services</title>
+    <meta name="title" content="Didas | React & Next.js with AI SEO & n8n Workflow Automation | Freelance Services">
+    <meta name="description" content="Expert React.js and Next.js developer offering AI-powered SEO, n8n workflow automation, and cutting-edge AI business solutions for Indian businesses. Leverage modern AI tools to transform your online presence.">
+    
+    <!-- Inline script to apply theme immediately -->
+    <script>
+      // Apply saved theme immediately to prevent flash of incorrect theme
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'light') {
+        document.documentElement.classList.add('light-theme');
+      }
+    </script>
+    
+    <meta name="keywords" content="React developer, Next.js development, AI SEO, n8n workflow automation, ChatGPT integration, LLM integration, AI solutions, semantic SEO, no-code automation, freelance developer, hire developer India, Dibyadarshi Das, web development Odisha, React.js expert">
+    <meta name="author" content="Dibyadarshi Das">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dibyadarshidas.com/freelance">
+    <meta property="og:title" content="Didas | React & Next.js with AI SEO & n8n Workflow Automation | Freelance Services">
+    <meta property="og:description" content="Expert React.js and Next.js developer offering AI-powered SEO, n8n workflow automation, and cutting-edge AI business solutions for Indian businesses. Leverage modern AI tools to transform your online presence.">
+    <meta property="og:image" content="./images/freelance-preview.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dibyadarshidas.com/freelance">
+    <meta property="twitter:title" content="Didas | React & Next.js with AI SEO & n8n Workflow Automation | Freelance Services">
+    <meta property="twitter:description" content="Expert React.js and Next.js developer offering AI-powered SEO, n8n workflow automation, and cutting-edge AI business solutions for Indian businesses. Leverage modern AI tools to transform your online presence.">
+    <meta property="twitter:image" content="./images/freelance-preview.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./images/favicon.ico" type="image/gif" sizes="16x16" />
+    <link rel="apple-touch-icon" href="./images/favicon.ico">
+    
+    <!-- Structured Data for Service Offerings -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Didas - Freelance Web Development & AI Solutions",
+      "image": "./images/logo-vector.png",
+      "@id": "https://dibyadarshidas.com/freelance",
+      "url": "https://dibyadarshidas.com/freelance",
+      "telephone": "+917008347451",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Odisha",
+        "addressCountry": "India"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "20.296059",
+        "longitude": "85.824539"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://github.com/Dibyadarshidas",
+        "https://www.linkedin.com/in/dibyadas/"
+      ],
+      "priceRange": "₹₹",
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "React + Next.js Development",
+          "description": "Modern, SEO-optimized web applications built with React and Next.js",
+          "price": "45000",
+          "priceCurrency": "INR"
+        },
+        {
+          "@type": "Offer",
+          "name": "AI Workflow Automation",
+          "description": "Custom AI-powered solutions to automate business processes and enhance productivity",
+          "price": "35000",
+          "priceCurrency": "INR"
+        },
+        {
+          "@type": "Offer",
+          "name": "AI-Enhanced Business Solutions",
+          "description": "Implement cutting-edge AI technologies for competitive advantage",
+          "price": "40000",
+          "priceCurrency": "INR"
+        },
+        {
+          "@type": "Offer",
+          "name": "Custom Website Development",
+          "description": "Bespoke websites built from scratch to match your brand identity",
+          "price": "25000",
+          "priceCurrency": "INR"
+        },
+        {
+          "@type": "Offer",
+          "name": "SEO Optimization Services",
+          "description": "Boost your website's visibility and drive organic traffic",
+          "price": "20000",
+          "priceCurrency": "INR"
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./freelance.css" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dibyadarshidas.com/freelance">
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header>
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="logo" aria-label="Site logo">Didas</div>
+        <div class="nav-right">
+          <!-- THEME TOGGLE moved into navigation -->
+          
+          <button class="hamburger-menu" aria-label="Toggle menu" aria-expanded="false">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </button>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" aria-label="Go to home section">Home</a></li>
+          <li><a href="index.html#skills" aria-label="Go to skills section">Skills</a></li>
+          <li><a href="index.html#projects" aria-label="Go to projects section">Projects</a></li>
+          <li><a href="index.html#mentorship" aria-label="Go to mentorship section">Mentorship</a></li>
+          <li><a href="#contact" aria-label="Go to contact section">Contact</a></li>
+          <li><a href="https://diby-chat.netlify.app/" target="_blank" rel="noopener" aria-label="Open Diby-Chat in a new tab">Diby-Chat <span class="card-tag">Beta</span></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="freelance-hero">
+      <div class="freelance-hero-overlay"></div>
+      <div class="container">
+        <div class="freelance-hero-content">
+          <h1 class="animated-heading"><span id="dynamic-heading">React + Next.js Development</span><br><span id="dynamic-subheading">with SEO-Optimized Results</span></h1>
+          <p class="hero-tagline" id="dynamic-tagline">Modern web applications that rank higher, load faster, and convert visitors into customers</p>
+          <div class="cta-buttons">
+            <a href="#services" class="primary-btn">Explore Services</a>
+            <a href="#contact" class="secondary-btn">Book a Discovery Call</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">98%</span>
+              <span class="stat-label">Client Satisfaction</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Projects Delivered</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-arrow">
+        <a href="#services">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
+    </section>
+    
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Services</span>
+          <h2>Expert Solutions with AI-Powered Development</h2>
+          <p>From concept to deployment, I deliver high-quality web solutions enhanced with modern AI technology tailored to your specific business requirements</p>
+        </div>
+        
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>Custom Website Development</h3>
+            <p>Bespoke websites built from scratch to match your brand identity and business goals. Optimized for performance, SEO, and conversion.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Responsive design for all devices</li>
+              <li><i class="fas fa-check"></i> SEO-friendly architecture</li>
+              <li><i class="fas fa-check"></i> Fast-loading pages</li>
+              <li><i class="fas fa-check"></i> Secure implementation</li>
+            </ul>
+            <div class="service-price">
+              <span>Starting at</span>
+              <span class="price">₹25,000</span>
+            </div>
+          </div>
+          
+          <div class="service-card featured">
+            <div class="service-tag">Most Popular</div>
+            <div class="service-icon">
+              <i class="fab fa-react"></i>
+            </div>
+            <h3>React + Next.js Development</h3>
+            <p>Modern, SEO-optimized web applications built with React and Next.js. Ideal for performant websites, e-commerce platforms, and content-rich experiences.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Server-side rendering for SEO</li>
+              <li><i class="fas fa-check"></i> Fast loading & optimized Core Web Vitals</li>
+              <li><i class="fas fa-check"></i> Responsive component library</li>
+              <li><i class="fas fa-check"></i> Advanced state management</li>
+            </ul>
+            <div class="service-price">
+              <span>Starting at</span>
+              <span class="price">₹45,000</span>
+            </div>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Responsive Web Design</h3>
+            <p>Perfect your user experience across all devices with fluid layouts that adapt to any screen size. Ensure your website looks great everywhere.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Mobile-first approach</li>
+              <li><i class="fas fa-check"></i> Cross-browser compatibility</li>
+              <li><i class="fas fa-check"></i> Touch-friendly interfaces</li>
+              <li><i class="fas fa-check"></i> Performance optimization</li>
+            </ul>
+            <div class="service-price">
+              <span>Starting at</span>
+              <span class="price">₹15,000</span>
+            </div>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>AI Workflow Automation</h3>
+            <p>Transform your business operations with custom AI-powered workflow automation. Reduce manual tasks, increase efficiency, and unlock new capabilities with cutting-edge AI technology.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Custom ChatGPT & LLM integrations</li>
+              <li><i class="fas fa-check"></i> Intelligent process automation</li>
+              <li><i class="fas fa-check"></i> AI-powered content generation</li>
+              <li><i class="fas fa-check"></i> Predictive analytics dashboards</li>
+            </ul>
+            <div class="service-price">
+              <span>Starting at</span>
+              <span class="price">₹35,000</span>
+            </div>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <h3>AI-Powered SEO Optimization</h3>
+            <p>Boost your website's visibility with AI-enhanced SEO strategies. Leverage cutting-edge tools and machine learning algorithms to outrank competitors and drive targeted organic traffic.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> AI content optimization & strategy</li>
+              <li><i class="fas fa-check"></i> Technical SEO with automation tools</li>
+              <li><i class="fas fa-check"></i> ML-driven keyword research</li>
+              <li><i class="fas fa-check"></i> Semantic SEO implementation</li>
+            </ul>
+            <div class="service-price">
+              <span>Starting at</span>
+              <span class="price">₹20,000</span>
+            </div>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-plug"></i>
+            </div>
+            <h3>n8n Workflow Automation</h3>
+            <p>Seamlessly connect your applications and automate complex workflows with n8n integration. Create efficient, customized automation without coding knowledge.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Custom n8n workflow design</li>
+              <li><i class="fas fa-check"></i> API integration & data flows</li>
+              <li><i class="fas fa-check"></i> Business process automation</li>
+              <li><i class="fas fa-check"></i> Scheduled tasks & triggers</li>
+            </ul>
+            <div class="service-price">
+              <span>Starting at</span>
+              <span class="price">₹30,000</span>
+            </div>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3>AI-Enhanced Business Solutions</h3>
+            <p>Leverage artificial intelligence to solve complex business challenges and gain competitive advantage with tailored AI solutions that deliver measurable ROI.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Customer behavior analysis</li>
+              <li><i class="fas fa-check"></i> AI-driven recommendation systems</li>
+              <li><i class="fas fa-check"></i> Natural language processing tools</li>
+              <li><i class="fas fa-check"></i> Business intelligence automation</li>
+            </ul>
+            <div class="service-price">
+              <span>Starting at</span>
+              <span class="price">₹40,000</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="services-cta">
+          <p>Need a custom solution not listed above?</p>
+          <a href="#contact" class="cta-button">Let's discuss your project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section id="process" class="process-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">My Process</span>
+          <h2>How We'll Work Together</h2>
+          <p>A transparent, collaborative approach that keeps you in the loop at every stage</p>
+        </div>
+        
+        <div class="process-timeline">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Discovery & Requirements</h3>
+              <p>We begin with a thorough discussion of your goals, target audience, and specific requirements. I'll analyze your business needs and propose the most effective solutions.</p>
+            </div>
+          </div>
+          
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Planning & Design</h3>
+              <p>Based on our discovery, I'll create wireframes and design mockups for your approval. This phase ensures we're aligned on the visual direction before any coding begins.</p>
+            </div>
+          </div>
+          
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Development</h3>
+              <p>With designs approved, I begin building your project using modern, maintainable code. You'll receive regular updates and access to development previews.</p>
+            </div>
+          </div>
+          
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>Testing & Refinement</h3>
+              <p>Every project undergoes rigorous testing for functionality, performance, and compatibility. We'll fine-tune the details until everything is perfect.</p>
+            </div>
+          </div>
+          
+          <div class="process-step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h3>Launch & Support</h3>
+              <p>Once approved, your project goes live with my full support for a smooth launch. I provide training and documentation to ensure you can manage your new digital asset.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="portfolio-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Portfolio</span>
+          <h2>Featured Client Projects</h2>
+          <p>A selection of recent work that demonstrates my expertise and approach</p>
+        </div>
+        
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="websites">Websites</button>
+          <button class="filter-btn" data-filter="applications">Applications</button>
+          <button class="filter-btn" data-filter="ai">AI Solutions</button>
+          <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+        </div>
+        
+        <div class="portfolio-grid">
+          <div class="portfolio-item" data-category="websites ecommerce">
+            <div class="portfolio-image">
+              <img src="./images/projects/picky.png" alt="Picky - E-commerce platform for stock images" loading="lazy">
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h3>Picky</h3>
+                  <p>E-commerce platform for premium stock images</p>
+                  <a href="#" class="view-project">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Picky</h3>
+              <p>React, Node.js, Stripe Integration</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-item" data-category="applications ai">
+            <div class="portfolio-image">
+              <img src="./images/projects/diby-chat.png" alt="Diby AI Chat - AI-powered chat application" loading="lazy">
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h3>Diby AI Chat</h3>
+                  <p>AI-powered conversational interface with TinyLlama integration</p>
+                  <a href="#" class="view-project">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Diby AI Chat</h3>
+              <p>React, TinyLlama, OpenAI</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-item" data-category="websites">
+            <div class="portfolio-image">
+              <img src="./images/projects/creativemantra.png" alt="Creative Mantra - Design agency website" loading="lazy">
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h3>Creative Mantra</h3>
+                  <p>Brand identity website for a creative design agency</p>
+                  <a href="#" class="view-project">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Creative Mantra</h3>
+              <p>HTML5, CSS3, JavaScript</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-item" data-category="applications ecommerce">
+            <div class="portfolio-image">
+              <img src="./images/projects/chakhhna.png" alt="Chakhhna - Restaurant ordering system" loading="lazy">
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h3>Chakhhna</h3>
+                  <p>Restaurant website with online ordering system</p>
+                  <a href="#" class="view-project">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Chakhhna</h3>
+              <p>React, Node.js, MongoDB</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-cta">
+          <p>Want to see more examples of my work?</p>
+          <a href="index.html#projects" class="cta-button">View All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Testimonials</span>
+          <h2>What Clients Are Saying</h2>
+          <p>Don't just take my word for it — hear from the businesses I've helped succeed</p>
+        </div>
+        
+        <div class="testimonial-slider">
+          <div class="testimonial-track">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <p>"Working with Didas was truly exceptional. His technical expertise combined with his creative approach transformed our outdated website into a modern, user-friendly platform that perfectly captures our brand. Our conversion rates have increased by 45% since launch and we've seen our traffic grow significantly from across India."</p>
+              </div>
+              <div class="testimonial-author">
+                <img src="https://ui-avatars.com/api/?name=Rajesh+Sharma&background=0D8ABC&color=fff" alt="Rajesh Sharma" class="author-image">
+                <div class="author-info">
+                  <h4>Rajesh Sharma</h4>
+                  <p>CEO, TechVision India</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <p>"Didas delivered our e-commerce platform ahead of schedule and under budget. The attention to detail and responsiveness to our feedback made the development process smooth and enjoyable. He seamlessly integrated Indian payment gateways and our business has grown 3x in just six months!"</p>
+              </div>
+              <div class="testimonial-author">
+                <img src="https://ui-avatars.com/api/?name=Priya+Mehta&background=9C1038&color=fff" alt="Priya Mehta" class="author-image">
+                <div class="author-info">
+                  <h4>Priya Mehta</h4>
+                  <p>Founder, Home Delights</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <p>"The AI integration services provided by Didas completely transformed our customer support capabilities. Our Hindi and English chatbot now handles 70% of routine inquiries, adapting perfectly to the Indian market. The ROI has been incredible and our customers love the 24/7 support!"</p>
+              </div>
+              <div class="testimonial-author">
+                <img src="https://ui-avatars.com/api/?name=Vikram+Patel&background=F26819&color=fff" alt="Vikram Patel" class="author-image">
+                <div class="author-info">
+                  <h4>Vikram Patel</h4>
+                  <p>CTO, Bharat Innovations</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-controls">
+            <button class="prev-btn" aria-label="Previous testimonial"><i class="fas fa-arrow-left"></i></button>
+            <div class="testimonial-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <button class="next-btn" aria-label="Next testimonial"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="section-header left-aligned">
+              <span class="section-badge">Get In Touch</span>
+              <h2>Let's Create Something Amazing Together</h2>
+              <p>Ready to discuss your project? Fill out the form and I'll get back to you within 24 hours to schedule a free consultation.</p>
+            </div>
+            
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>ddas270@gmail.com</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Phone</h4>
+                  <p>+91 7008347451</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Location</h4>
+                  <p>Odisha, India</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="availability-indicator">
+              <span class="status-dot online"></span>
+              <p>Currently available for new projects</p>
+            </div>
+          </div>
+          
+          <div class="contact-form-container">
+            <form id="freelanceContactForm" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name*</label>
+                  <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Your Email*</label>
+                  <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="company">Company/Organization</label>
+                <input type="text" id="company" name="company" placeholder="Your company name (optional)">
+              </div>
+              
+              <div class="form-group">
+                <label for="service">Service You're Interested In*</label>
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="website-development">Custom Website Development</option>
+                  <option value="react-development">React + Next.js Development</option>
+                  <option value="responsive-design">Responsive Web Design</option>
+                  <option value="ai-workflow">AI Workflow Automation</option>
+                  <option value="ai-business">AI-Enhanced Business Solutions</option>
+                  <option value="seo-optimization">SEO Optimization Services</option>
+                  <option value="other">Other (Please specify)</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="budget">Estimated Budget (INR)*</label>
+                <select id="budget" name="budget" required>
+                  <option value="" disabled selected>Select your budget range</option>
+                  <option value="under-15k">Under ₹15,000</option>
+                  <option value="15k-25k">₹15,000 - ₹25,000</option>
+                  <option value="25k-35k">₹25,000 - ₹35,000</option>
+                  <option value="35k-50k">₹35,000 - ₹50,000</option>
+                  <option value="above-50k">₹50,000+</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="timeline">Project Timeline*</label>
+                <select id="timeline" name="timeline" required>
+                  <option value="" disabled selected>When do you need this completed?</option>
+                  <option value="urgent">Urgent (1-2 weeks)</option>
+                  <option value="1-month">Within a month</option>
+                  <option value="2-3-months">2-3 months</option>
+                  <option value="flexible">Flexible/Not sure yet</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Project Details*</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project goals, requirements, and any specific features you're looking for..." required></textarea>
+              </div>
+              
+              <div class="form-submit">
+                <button type="submit" class="submit-btn">
+                  <span>Send Message</span>
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+            
+            <div class="form-success">
+              <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+              <h3>Message Sent Successfully!</h3>
+              <p>Thank you for reaching out. I'll get back to you within 24 hours to discuss your project.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">FAQ</span>
+          <h2>Frequently Asked Questions</h2>
+          <p>Common questions about my services and process</p>
+        </div>
+        
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How do Next.js and SEO services benefit my business?</h3>
+              <div class="toggle-icon"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Next.js provides server-side rendering which significantly improves your website's SEO by making content fully visible to search engines. Combined with my dedicated SEO services, you'll benefit from faster page loads, improved Core Web Vitals scores, and higher search rankings. This translates to better visibility, more organic traffic, and ultimately increased conversions for your business.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How long does it typically take to complete a project?</h3>
+              <div class="toggle-icon"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Project timelines vary based on complexity and scope. A simple website might take 2-4 weeks, while a complex web application could take 2-3 months. During our initial consultation, I'll provide a detailed timeline specific to your project.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What is your payment structure?</h3>
+              <div class="toggle-icon"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>I typically work with a 50% upfront deposit to begin work, with the remaining 50% due upon project completion. For larger projects, I offer milestone-based payments to distribute costs throughout the development process.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Do you provide website maintenance after launch?</h3>
+              <div class="toggle-icon"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, I offer various maintenance packages to keep your website secure, updated, and performing optimally. These can include regular updates, security monitoring, content changes, and technical support.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Will I be able to update the website content myself?</h3>
+              <div class="toggle-icon"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Absolutely! I build websites with user-friendly content management systems or custom admin panels that allow you to easily update content. I also provide documentation and training so you feel confident managing your site.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Do you help with domain registration and hosting?</h3>
+              <div class="toggle-icon"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, I can assist with domain registration, hosting setup, and deployment. I'll recommend reliable hosting providers based on your project's specific needs and can handle the technical aspects of setting everything up.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <h2 class="footer-logo">Didas</h2>
+        <p>Creating exceptional digital experiences that drive business growth.</p>
+        
+        <div class="footer-links">
+          <div class="footer-col">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#process">Process</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-col">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#services">Website Development</a></li>
+              <li><a href="#services">React Applications</a></li>
+              <li><a href="#services">Responsive Design</a></li>
+              <li><a href="#services">AI Integration</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-col">
+            <h3>Contact</h3>
+            <ul class="contact-list">
+              <li><i class="fas fa-envelope"></i> ddas270@gmail.com</li>
+              <li><i class="fas fa-phone"></i> +91 7008347451</li>
+              <li><i class="fas fa-map-marker-alt"></i> Odisha, India</li>
+            </ul>
+          </div>
+          
+          <div class="footer-col">
+            <h3>Connect</h3>
+            <div class="social-links">
+              <a href="https://github.com/Dibyadarshidas" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/dibyadas/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://dribbble.com/Dibyadarshi" target="_blank" rel="noopener" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+              <a href="https://wa.me/+917008347451" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>© <span id="current-year">2023</span> Didas. All Rights Reserved.</p>
+          <div class="back-to-top">
+            <a href="#" id="top-button" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Add a CTA Banner -->
+    <div class="sticky-cta" id="sticky-cta">
+      <div class="cta-content">
+        <p><strong>Limited Time Offer:</strong> 20% discount on all packages for Indian startups</p>
+        <a href="#contact" class="cta-button pulse">Book Free Consultation</a>
+      </div>
+      <button class="close-cta" id="close-cta" aria-label="Close promotion banner">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="./index.js?v=1.1" defer></script>
+    <script src="./freelance.js?v=1.1" defer></script>
+    
+    <!-- Update copyright year -->
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
