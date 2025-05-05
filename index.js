@@ -18,6 +18,8 @@ const offerBanner = document.querySelector('.limited-offer-banner');
 const offerBtn = document.getElementById('offer-btn');
 const closeOfferBtn = document.getElementById('close-offer');
 const newsletterPopup = document.getElementById('newsletter-popup');
+const freelanceSticky = document.querySelector('.freelance-sticky');
+const floatingCta = document.querySelector('.floating-cta');
 
 // Banner Functionality - appear every time unless user explicitly cancels
 if (offerBanner && closeOfferBtn && offerBtn) {
@@ -775,4 +777,30 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Create chatbot instance with provider from config.js
     window.dibyChatbot = new DibyChatbot();
+});
+
+// Show freelance sticky button after scrolling past hero section
+document.addEventListener('DOMContentLoaded', function() {
+  const freelanceSticky = document.querySelector('.freelance-sticky');
+  const heroSection = document.getElementById('home');
+  
+  if (freelanceSticky && heroSection) {
+    // Function to check scroll position and show/hide button
+    function toggleFreelanceSticky() {
+      const heroBottom = heroSection.getBoundingClientRect().bottom;
+      
+      // Show button after scrolling past hero section
+      if (heroBottom <= 0) {
+        freelanceSticky.classList.add('show');
+      } else {
+        freelanceSticky.classList.remove('show');
+      }
+    }
+    
+    // Initial check
+    toggleFreelanceSticky();
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', toggleFreelanceSticky);
+  }
 });

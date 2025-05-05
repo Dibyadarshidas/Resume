@@ -1907,4 +1907,16 @@ footer {
 
 .light-theme .faq-answer {
   background: #fff;
+}
+
+/* Animation for the sticky CTA banner */
+@keyframes slideUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 } 
